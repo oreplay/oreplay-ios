@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D8A1041BA5AA9D7B0C62162 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFB8158C1584A6FC6D7DDC /* ProjectTests.swift */; };
+		3DF2000D18F5F515B3D8FB2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C96719885D4AD93ABE20966 /* Assets.xcassets */; };
+		9CCBC12E3BDE2BCBED2053E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ADE2086B10118F664DA0A /* ContentView.swift */; };
+		EC1754D0A331A25AA52AC9EC /* ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2972D8C0F6ABF755A1C7A8 /* ProjectApp.swift */; };
+		F570B6488D49DA6DBD57609A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A1B348106A2C984165905F /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52B93736B3FE46F07F06B03B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F751FC75423B641D5D75C42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 309144333C7D8897B2A7ADD4;
+			remoteInfo = OReplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F385D812C220A0692CA4332 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2E3D9D8975460FC17864818 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1FFFB8158C1584A6FC6D7DDC /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
+		41DC4B672FE23D6286585469 /* OReplayTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OReplayTest-Info.plist"; sourceTree = "<group>"; };
+		4EAC5AF4CD1F7B4C6F80ADB4 /* OReplayTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OReplayTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C96719885D4AD93ABE20966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82A1B348106A2C984165905F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8EE33A3B62EAF9042DC215FE /* OReplay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OReplay-Info.plist"; sourceTree = "<group>"; };
+		932ADE2086B10118F664DA0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A3186A2656C36E98F11A9606 /* OReplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OReplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2972D8C0F6ABF755A1C7A8 /* ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34F79CA52D582441296E76FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A966C7C4EA2FA4EF168F6888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		186DFD218525E0BCF86848FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80A6BA1C9042295585199D95 /* SupportingFiles */,
+				B717D507801264EB75648CD1 /* Preview Content */,
+				7C96719885D4AD93ABE20966 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2FC870AA781746F1295EDDB5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				932ADE2086B10118F664DA0A /* ContentView.swift */,
+				EC2972D8C0F6ABF755A1C7A8 /* ProjectApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3380BFDD10833C0A5B8AB566 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				8EE33A3B62EAF9042DC215FE /* OReplay-Info.plist */,
+				41DC4B672FE23D6286585469 /* OReplayTest-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		4D6CB2817D73CCFB57CD7001 = {
+			isa = PBXGroup;
+			children = (
+				51F41D04BCBC77F17DC9A157 /* Project */,
+				FE2D8FC38E733F7D29A40225 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		51F41D04BCBC77F17DC9A157 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				F2B3034671FE9D809629958C /* OReplay */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		692DEC6D97D90A5FB1F055D2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1FFFB8158C1584A6FC6D7DDC /* ProjectTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		80A6BA1C9042295585199D95 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3380BFDD10833C0A5B8AB566 /* InfoPlists */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B717D507801264EB75648CD1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				82A1B348106A2C984165905F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2B3034671FE9D809629958C /* OReplay */ = {
+			isa = PBXGroup;
+			children = (
+				186DFD218525E0BCF86848FE /* Resources */,
+				2FC870AA781746F1295EDDB5 /* Sources */,
+				692DEC6D97D90A5FB1F055D2 /* Tests */,
+			);
+			path = OReplay;
+			sourceTree = "<group>";
+		};
+		FE2D8FC38E733F7D29A40225 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3186A2656C36E98F11A9606 /* OReplay.app */,
+				4EAC5AF4CD1F7B4C6F80ADB4 /* OReplayTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		309144333C7D8897B2A7ADD4 /* OReplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C9A870A487733768EB3FC03 /* Build configuration list for PBXNativeTarget "OReplay" */;
+			buildPhases = (
+				F429ABD84A78B5DAED739EE3 /* Sources */,
+				BD00CD7AD3183921640C3D91 /* Resources */,
+				C2E3D9D8975460FC17864818 /* Embed Frameworks */,
+				34F79CA52D582441296E76FC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OReplay;
+			packageProductDependencies = (
+			);
+			productName = OReplay;
+			productReference = A3186A2656C36E98F11A9606 /* OReplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBFC9E575E8B2B7EFE21C2E6 /* OReplayTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07D1D0A2E8FF34CE4F82DB6 /* Build configuration list for PBXNativeTarget "OReplayTest" */;
+			buildPhases = (
+				406230B7C7CB2E76147C0A48 /* Sources */,
+				BFFEC5902B4F21B522621C8E /* Resources */,
+				1F385D812C220A0692CA4332 /* Embed Frameworks */,
+				A966C7C4EA2FA4EF168F6888 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C576D98FD9F5A623FFD318E7 /* PBXTargetDependency */,
+			);
+			name = OReplayTest;
+			packageProductDependencies = (
+			);
+			productName = OReplayTest;
+			productReference = 4EAC5AF4CD1F7B4C6F80ADB4 /* OReplayTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F751FC75423B641D5D75C42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				ORGANIZATIONNAME = com.ruralnerd;
+				TargetAttributes = {
+					BBFC9E575E8B2B7EFE21C2E6 = {
+						TestTargetID = 309144333C7D8897B2A7ADD4;
+					};
+				};
+			};
+			buildConfigurationList = E96E8F2DF71EC9355DB674F8 /* Build configuration list for PBXProject "OReplay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4D6CB2817D73CCFB57CD7001;
+			productRefGroup = FE2D8FC38E733F7D29A40225 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				309144333C7D8897B2A7ADD4 /* OReplay */,
+				BBFC9E575E8B2B7EFE21C2E6 /* OReplayTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD00CD7AD3183921640C3D91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF2000D18F5F515B3D8FB2A /* Assets.xcassets in Resources */,
+				F570B6488D49DA6DBD57609A /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFEC5902B4F21B522621C8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		406230B7C7CB2E76147C0A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8A1041BA5AA9D7B0C62162 /* ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F429ABD84A78B5DAED739EE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CCBC12E3BDE2BCBED2053E0 /* ContentView.swift in Sources */,
+				EC1754D0A331A25AA52AC9EC /* ProjectApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C576D98FD9F5A623FFD318E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OReplay;
+			target = 309144333C7D8897B2A7ADD4 /* OReplay */;
+			targetProxy = 52B93736B3FE46F07F06B03B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3BC3B60C365F30E2FDFC0FD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CA27B28D1BBEEFEE0E078A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = H6736Y4CV2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "OReplay/Resources/SupportingFiles/InfoPlists/OReplay-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = OReplay;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruralnerd.OReplay;
+				PRODUCT_NAME = OReplay;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EFFF61FDA91C763F2921337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = H6736Y4CV2;
+				INFOPLIST_FILE = "OReplay/Resources/SupportingFiles/InfoPlists/OReplayTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruralnerd.OReplayTests;
+				PRODUCT_NAME = OReplayTest;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OReplay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OReplay";
+				TEST_TARGET_NAME = OReplay;
+			};
+			name = Debug;
+		};
+		B2EFEB8AD5368E322433210A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C5C92DA8C0A4A2E3049BFFE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = H6736Y4CV2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "OReplay/Resources/SupportingFiles/InfoPlists/OReplay-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = OReplay;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruralnerd.OReplay;
+				PRODUCT_NAME = OReplay;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFF6745EC75354D9763DD15E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = H6736Y4CV2;
+				INFOPLIST_FILE = "OReplay/Resources/SupportingFiles/InfoPlists/OReplayTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruralnerd.OReplayTests;
+				PRODUCT_NAME = OReplayTest;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OReplay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OReplay";
+				TEST_TARGET_NAME = OReplay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C9A870A487733768EB3FC03 /* Build configuration list for PBXNativeTarget "OReplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA27B28D1BBEEFEE0E078A1 /* Debug */,
+				C5C92DA8C0A4A2E3049BFFE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07D1D0A2E8FF34CE4F82DB6 /* Build configuration list for PBXNativeTarget "OReplayTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EFFF61FDA91C763F2921337 /* Debug */,
+				CFF6745EC75354D9763DD15E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E96E8F2DF71EC9355DB674F8 /* Build configuration list for PBXProject "OReplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2EFEB8AD5368E322433210A /* Debug */,
+				3BC3B60C365F30E2FDFC0FD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F751FC75423B641D5D75C42 /* Project object */;
+}
