@@ -1,11 +1,11 @@
 protocol RequestFactoryContract {
-    @MainActor
-    func create(path: String, parameters: [String : String]?) -> HttpRequestContract
+    @DataActor
+    func create(path: String, parameters: [String : String]?) -> HTTPRequestContract
 }
 
 extension RequestFactoryContract {
-    @MainActor
-    func create(path: String, parameters: [String : String]? = nil) -> HttpRequestContract {
+    @DataActor
+    func create(path: String, parameters: [String : String]? = nil) -> HTTPRequestContract {
         create(path: path, parameters: parameters)
     }
     

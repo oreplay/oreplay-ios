@@ -1,6 +1,6 @@
 import Foundation
 
-enum HttpError: Error {
+enum HTTPError: Error {
     case invalidUrl
     case unknownNetworkError
     case noNetworkError

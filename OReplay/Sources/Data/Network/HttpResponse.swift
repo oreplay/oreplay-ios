@@ -1,6 +1,7 @@
 import Foundation
 
-final class HttpResponse: HttpResponseContract {
+@DataActor
+final class HTTPResponse: HTTPResponseContract {
     
     enum StatusCodes: Int {
         case ok = 200
@@ -35,18 +36,18 @@ final class HttpResponse: HttpResponseContract {
     
     // Tries to get the body of the response as a Decodable object
     func `as`<T: Decodable>(_ type: T.Type) -> T? {
-        
         guard let rawData else { return nil }
         
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX"
         
         let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
         decoder.dateDecodingStrategy = .formatted(formatter)
         
         return try? decoder.decode(type, from: rawData)
-        
     }
     
 }

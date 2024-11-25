@@ -6,7 +6,12 @@ enum NetworkStatus: String {
     case disconnected
 }
 
-@MainActor
+@globalActor
+actor DataActor {
+    static let shared = DataActor()
+}
+
+@DataActor
 final class Monitor: ObservableObject {
     
     static let shared = Monitor()
@@ -16,19 +21,19 @@ final class Monitor: ObservableObject {
     @Published var status: NetworkStatus = .connected
     
     private init() {
-        
-        monitor.pathUpdateHandler = { [weak self] path in
-            
-            Task { @MainActor in
-                self?.status = path.status == .satisfied ? .connected : .disconnected
+        monitor.pathUpdateHandler = { path in
+            Task { [weak self] in
+                await self?.updateStatus(path.status == .satisfied ? .connected : .disconnected)
             }
-            
         }
-        
     }
     
     public func start() {
         monitor.start(queue: queue)
+    }
+    
+    private func updateStatus(_ status: NetworkStatus) {
+        self.status = status
     }
     
 }

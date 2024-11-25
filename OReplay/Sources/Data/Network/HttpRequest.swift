@@ -1,9 +1,9 @@
-import Combine
+@preconcurrency import Combine
 import Foundation
 import Network
 
-@MainActor
-final class HttpRequest: HttpRequestContract {
+@DataActor
+final class HTTPRequest: HTTPRequestContract {
     
     enum Method: String, Sendable {
         case get = "GET"
@@ -18,20 +18,18 @@ final class HttpRequest: HttpRequestContract {
     private var body: Data?
     private var printCurl = UserDefaults.standard.bool(forKey: "printCurl")
     private var printResponse = UserDefaults.standard.bool(forKey: "printLog")
-    nonisolated(unsafe) private var cancellable: AnyCancellable?
+    private var cancellable: AnyCancellable?
     private(set) var urlSession: URLSessionContract = URLSession.shared
     private(set) var networkConexion = false
     
     // MARK: - Initializers
     init(_ path: String) {
         self.url = path
-        Task { [weak self] in
-            await self?.configureNetworkMonitor()
-        }
+        configureNetworkMonitor()
     }
     
     convenience init(_ path: String, parameters: [String : String]?) {
-        self.init("\(path)\(HttpRequest.getQuery(parameters))")
+        self.init("\(path)\(HTTPRequest.getQuery(parameters))")
     }
     
     deinit {
@@ -58,16 +56,16 @@ final class HttpRequest: HttpRequestContract {
         return self
     }
     
-    func connect() async throws -> HttpResponseContract {
+    func connect() async throws -> HTTPResponseContract {
         
         // Bail out at the beginning if the url is not valid
         guard let url = URL(string: url) else {
-            throw HttpError.invalidUrl
+            throw HTTPError.invalidUrl
         }
         
         // 
         guard networkConexion else {
-            throw HttpError.noNetworkError
+            throw HTTPError.noNetworkError
         }
 
         // Return the prepared request
@@ -76,8 +74,8 @@ final class HttpRequest: HttpRequestContract {
     }
     
     // MARK: - Private methods
-    @MainActor
-    private func configureNetworkMonitor() async {
+    @DataActor
+    private func configureNetworkMonitor() {
         cancellable = Monitor.shared.$status.sink() { [weak self] status in
             self?.networkConexion = status == .connected
         }
@@ -97,7 +95,7 @@ final class HttpRequest: HttpRequestContract {
         
     }
     
-    private func prepareRequest(_ url: URL) async throws -> HttpResponseContract {
+    private func prepareRequest(_ url: URL) async throws -> HTTPResponseContract {
         
         // Create the request with its URL and method
         var request = URLRequest(url: url)
@@ -122,30 +120,19 @@ final class HttpRequest: HttpRequestContract {
         
     }
     
-    private func sendRequest(_ request: URLRequest) async throws -> HttpResponseContract {
+    private func sendRequest(_ request: URLRequest) async throws -> HTTPResponseContract {
         
-        try await withCheckedThrowingContinuation { continuation in
-
-            urlSession.dataTask(with: request) { (data, response, error) in
-                
-                guard let response = response as? HTTPURLResponse else {
-                    continuation.resume(throwing: error ?? HttpError.unknownNetworkError)
-                    return
-                }
-                
-                #if DEBUG
-                Task { @MainActor [weak self] in
-                    if self?.printResponse == true {
-                        self?.logResponse(data: data, response: response)
-                    }
-                }
-                #endif
-                
-                continuation.resume(returning: HttpResponse(response.statusCode, data))
-
-            }.resume()
-
+        let (data, response) = try await urlSession.data(for: request)
+        guard let response = response as? HTTPURLResponse else {
+            throw HTTPError.unknownNetworkError
         }
+        
+        #if DEBUG
+        if printResponse == true {
+            logResponse(data: data, response: response)
+        }
+        #endif
+        return HTTPResponse(response.statusCode, data)
 
     }
     

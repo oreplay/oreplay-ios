@@ -1,3 +1,3 @@
 enum APIConstants {
-    static let baseURL = "https://oreplay.es/api/v1"
+    static let baseURL = "https://www.oreplay.es/api/v1"
 }

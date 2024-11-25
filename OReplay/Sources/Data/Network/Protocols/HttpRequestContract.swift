@@ -1,3 +1,4 @@
-protocol HttpRequestContract {
-    func connect() async throws -> HttpResponseContract
+@DataActor
+protocol HTTPRequestContract {
+    func connect() async throws -> HTTPResponseContract
 }

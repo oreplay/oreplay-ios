@@ -1,6 +1,6 @@
 final class RequestFactory: RequestFactoryContract {
-    @MainActor
-    func create(path: String, parameters: [String : String]? = nil) -> HttpRequestContract {
-        HttpRequest("\(APIConstants.baseURL)\(path)", parameters: parameters)
+    @DataActor
+    func create(path: String, parameters: [String : String]? = nil) -> HTTPRequestContract {
+        HTTPRequest("\(APIConstants.baseURL)\(path)", parameters: parameters)
     }
 }
