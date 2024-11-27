@@ -12,7 +12,7 @@ final class HTTPRequest: HTTPRequestContract {
         case delete = "DELETE"
     }
     
-    private let url: String
+    let url: String
     private var method: Method = .get
     private var headers: [String : String] = [:]
     private var body: Data?
@@ -76,7 +76,7 @@ final class HTTPRequest: HTTPRequestContract {
     // MARK: - Private methods
     @DataActor
     private func configureNetworkMonitor() {
-        cancellable = Monitor.shared.$status.sink() { [weak self] status in
+        cancellable = NetworkMonitor.shared.$status.sink() { [weak self] status in
             self?.networkConexion = status == .connected
         }
     }

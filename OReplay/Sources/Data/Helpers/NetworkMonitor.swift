@@ -1,5 +1,6 @@
 import Network
 import Combine
+import Factory
 
 enum NetworkStatus: String {
     case connected
@@ -12,9 +13,9 @@ actor DataActor {
 }
 
 @DataActor
-final class Monitor: ObservableObject {
+final class NetworkMonitor: NetworkMonitorContract, ObservableObject {
     
-    static let shared = Monitor()
+    static let shared = NetworkMonitor()
     private let monitor = NWPathMonitor()
     private let queue = DispatchQueue(label: "Monitor")
     

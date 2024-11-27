@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D8A1041BA5AA9D7B0C62162 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFB8158C1584A6FC6D7DDC /* ProjectTests.swift */; };
 		3DF2000D18F5F515B3D8FB2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C96719885D4AD93ABE20966 /* Assets.xcassets */; };
 		9CCBC12E3BDE2BCBED2053E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ADE2086B10118F664DA0A /* ContentView.swift */; };
 		C2380F0C2CE8B5A0006E56E2 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2380F042CE8B5A0006E56E2 /* HTTPError.swift */; };
@@ -20,6 +19,9 @@
 		C2380F132CE8B5A0006E56E2 /* RequestFactoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2380F082CE8B5A0006E56E2 /* RequestFactoryContract.swift */; };
 		C2380F162CE8B7E6006E56E2 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2380F152CE8B7E6006E56E2 /* NetworkMonitor.swift */; };
 		C2380F182CE8C42A006E56E2 /* HTTPResponseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2380F172CE8C42A006E56E2 /* HTTPResponseContract.swift */; };
+		C26C46712CF7A02D00566F20 /* NetworkMonitorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C46702CF7A02D00566F20 /* NetworkMonitorContract.swift */; };
+		C26C46742CF7A25A00566F20 /* RequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C46732CF7A25A00566F20 /* RequestFactoryTests.swift */; };
+		C2705D2E2CF5054F0001908A /* NetworkMonitorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2705D2D2CF5054F0001908A /* NetworkMonitorMock.swift */; };
 		C28A36A22CEA56D200D11E93 /* DataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36A12CEA56D200D11E93 /* DataModule.swift */; };
 		C28A36A52CEA576C00D11E93 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = C28A36A42CEA576C00D11E93 /* Factory */; };
 		C28A36A82CEA5FDF00D11E93 /* EventsRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36A72CEA5FDF00D11E93 /* EventsRepositoryContract.swift */; };
@@ -70,7 +72,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1FFFB8158C1584A6FC6D7DDC /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
 		41DC4B672FE23D6286585469 /* OReplayTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OReplayTest-Info.plist"; sourceTree = "<group>"; };
 		4EAC5AF4CD1F7B4C6F80ADB4 /* OReplayTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OReplayTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C96719885D4AD93ABE20966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +89,9 @@
 		C2380F0B2CE8B5A0006E56E2 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		C2380F152CE8B7E6006E56E2 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		C2380F172CE8C42A006E56E2 /* HTTPResponseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseContract.swift; sourceTree = "<group>"; };
+		C26C46702CF7A02D00566F20 /* NetworkMonitorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorContract.swift; sourceTree = "<group>"; };
+		C26C46732CF7A25A00566F20 /* RequestFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryTests.swift; sourceTree = "<group>"; };
+		C2705D2D2CF5054F0001908A /* NetworkMonitorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorMock.swift; sourceTree = "<group>"; };
 		C28A36A12CEA56D200D11E93 /* DataModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModule.swift; sourceTree = "<group>"; };
 		C28A36A72CEA5FDF00D11E93 /* EventsRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepositoryContract.swift; sourceTree = "<group>"; };
 		C28A36A92CEA631E00D11E93 /* EventsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepository.swift; sourceTree = "<group>"; };
@@ -170,7 +174,7 @@
 		692DEC6D97D90A5FB1F055D2 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1FFFB8158C1584A6FC6D7DDC /* ProjectTests.swift */,
+				C2705D262CF4A6EA0001908A /* Data */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -244,6 +248,7 @@
 				C2380F082CE8B5A0006E56E2 /* RequestFactoryContract.swift */,
 				C2380F092CE8B5A0006E56E2 /* URLSessionContract.swift */,
 				C2380F172CE8C42A006E56E2 /* HTTPResponseContract.swift */,
+				C26C46702CF7A02D00566F20 /* NetworkMonitorContract.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -252,6 +257,31 @@
 			isa = PBXGroup;
 			children = (
 				C2380F152CE8B7E6006E56E2 /* NetworkMonitor.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C26C46722CF7A23C00566F20 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C26C46732CF7A25A00566F20 /* RequestFactoryTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C2705D262CF4A6EA0001908A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C26C46722CF7A23C00566F20 /* Network */,
+				C2705D272CF4A6FF0001908A /* Helpers */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C2705D272CF4A6FF0001908A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C2705D2D2CF5054F0001908A /* NetworkMonitorMock.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -439,7 +469,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D8A1041BA5AA9D7B0C62162 /* ProjectTests.swift in Sources */,
+				C26C46742CF7A25A00566F20 /* RequestFactoryTests.swift in Sources */,
+				C2705D2E2CF5054F0001908A /* NetworkMonitorMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +493,7 @@
 				C2EEADD02CF3289A00B3C1AF /* PresentationModule.swift in Sources */,
 				C2EEADCE2CF3212F00B3C1AF /* DomainModule.swift in Sources */,
 				C28A36A82CEA5FDF00D11E93 /* EventsRepositoryContract.swift in Sources */,
+				C26C46712CF7A02D00566F20 /* NetworkMonitorContract.swift in Sources */,
 				C2EEADCC2CF3208D00B3C1AF /* EventsUseCase.swift in Sources */,
 				C2EEADCA2CF3187600B3C1AF /* EventsUseCaseContract.swift in Sources */,
 				C28A36A22CEA56D200D11E93 /* DataModule.swift in Sources */,
