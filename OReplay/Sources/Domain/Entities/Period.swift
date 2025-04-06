@@ -5,8 +5,7 @@ enum Period: Hashable, Equatable {
     case today
     case future
     case range(start: Date, end: Date)
-    
-    @DataActor
+
     var toString: String {
         switch self {
         case .past: "past"

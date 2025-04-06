@@ -2,7 +2,6 @@ import Testing
 
 @testable import OReplay
 
-@DataActor
 struct RequestFactoryTests {
     @Test
     func createARequestWithoutParametersWorks() {

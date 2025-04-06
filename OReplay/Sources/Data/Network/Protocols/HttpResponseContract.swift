@@ -1,6 +1,5 @@
 import Foundation
 
-@DataActor
 protocol HTTPResponseContract: Sendable {
     var code: Int { get }
     var rawData: Data? { get }

@@ -8,11 +8,11 @@ enum NetworkStatus: String {
 }
 
 @globalActor
-actor DataActor {
-    static let shared = DataActor()
+actor NetworkMonitorActor {
+    static let shared = NetworkMonitorActor()
 }
 
-@DataActor
+@NetworkMonitorActor
 final class NetworkMonitor: NetworkMonitorContract, ObservableObject {
     
     static let shared = NetworkMonitor()

@@ -14,5 +14,6 @@ struct Event: Decodable, Identifiable {
     let federationId: String?
     let created: Date
     let modified: Date
-    let organizer: String?
+    let organizerId: String?
+    let organizer: Organizer?
 }

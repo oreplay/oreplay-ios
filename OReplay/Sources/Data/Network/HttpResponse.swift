@@ -1,6 +1,5 @@
 import Foundation
 
-@DataActor
 final class HTTPResponse: HTTPResponseContract {
     
     enum StatusCodes: Int {

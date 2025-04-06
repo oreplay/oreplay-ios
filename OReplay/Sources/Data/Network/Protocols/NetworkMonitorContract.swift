@@ -1,4 +1,4 @@
-@DataActor
+@NetworkMonitorActor
 protocol NetworkMonitorContract {
     var status: NetworkStatus { get }
     

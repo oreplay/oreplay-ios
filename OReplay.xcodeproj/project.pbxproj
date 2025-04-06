@@ -20,15 +20,16 @@
 		C2380F132CE8B5A0006E56E2 /* RequestFactoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2380F082CE8B5A0006E56E2 /* RequestFactoryContract.swift */; };
 		C2380F162CE8B7E6006E56E2 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2380F152CE8B7E6006E56E2 /* NetworkMonitor.swift */; };
 		C2380F182CE8C42A006E56E2 /* HTTPResponseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2380F172CE8C42A006E56E2 /* HTTPResponseContract.swift */; };
+		C252722F2D0B5BC50010F295 /* HTTPRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C252722E2D0B5BC50010F295 /* HTTPRequestTests.swift */; };
 		C26C46712CF7A02D00566F20 /* NetworkMonitorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C46702CF7A02D00566F20 /* NetworkMonitorContract.swift */; };
 		C26C46742CF7A25A00566F20 /* RequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C46732CF7A25A00566F20 /* RequestFactoryTests.swift */; };
-		C2705D2E2CF5054F0001908A /* NetworkMonitorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2705D2D2CF5054F0001908A /* NetworkMonitorMock.swift */; };
 		C28A36A22CEA56D200D11E93 /* DataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36A12CEA56D200D11E93 /* DataModule.swift */; };
 		C28A36A52CEA576C00D11E93 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = C28A36A42CEA576C00D11E93 /* Factory */; };
 		C28A36A82CEA5FDF00D11E93 /* EventsRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36A72CEA5FDF00D11E93 /* EventsRepositoryContract.swift */; };
 		C28A36AA2CEA631E00D11E93 /* EventsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36A92CEA631E00D11E93 /* EventsRepository.swift */; };
 		C28A36AD2CEA655800D11E93 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36AC2CEA655800D11E93 /* Event.swift */; };
 		C28A36AF2CEA67A100D11E93 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36AE2CEA67A100D11E93 /* EventList.swift */; };
+		C2AB56192DA2D55C00167487 /* Organizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB56182DA2D55C00167487 /* Organizer.swift */; };
 		C2EEADCA2CF3187600B3C1AF /* EventsUseCaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EEADC92CF3187600B3C1AF /* EventsUseCaseContract.swift */; };
 		C2EEADCC2CF3208D00B3C1AF /* EventsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EEADCB2CF3208D00B3C1AF /* EventsUseCase.swift */; };
 		C2EEADCE2CF3212F00B3C1AF /* DomainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EEADCD2CF3212F00B3C1AF /* DomainModule.swift */; };
@@ -91,14 +92,15 @@
 		C2380F0B2CE8B5A0006E56E2 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		C2380F152CE8B7E6006E56E2 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		C2380F172CE8C42A006E56E2 /* HTTPResponseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseContract.swift; sourceTree = "<group>"; };
+		C252722E2D0B5BC50010F295 /* HTTPRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestTests.swift; sourceTree = "<group>"; };
 		C26C46702CF7A02D00566F20 /* NetworkMonitorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorContract.swift; sourceTree = "<group>"; };
 		C26C46732CF7A25A00566F20 /* RequestFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryTests.swift; sourceTree = "<group>"; };
-		C2705D2D2CF5054F0001908A /* NetworkMonitorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorMock.swift; sourceTree = "<group>"; };
 		C28A36A12CEA56D200D11E93 /* DataModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModule.swift; sourceTree = "<group>"; };
 		C28A36A72CEA5FDF00D11E93 /* EventsRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepositoryContract.swift; sourceTree = "<group>"; };
 		C28A36A92CEA631E00D11E93 /* EventsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepository.swift; sourceTree = "<group>"; };
 		C28A36AC2CEA655800D11E93 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C28A36AE2CEA67A100D11E93 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		C2AB56182DA2D55C00167487 /* Organizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organizer.swift; sourceTree = "<group>"; };
 		C2EEADC92CF3187600B3C1AF /* EventsUseCaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsUseCaseContract.swift; sourceTree = "<group>"; };
 		C2EEADCB2CF3208D00B3C1AF /* EventsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsUseCase.swift; sourceTree = "<group>"; };
 		C2EEADCD2CF3212F00B3C1AF /* DomainModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModule.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			children = (
 				C26C46732CF7A25A00566F20 /* RequestFactoryTests.swift */,
 				C21BD0FD2CF7A7A10012C652 /* APIConstantsTests.swift */,
+				C252722E2D0B5BC50010F295 /* HTTPRequestTests.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -276,17 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				C26C46722CF7A23C00566F20 /* Network */,
-				C2705D272CF4A6FF0001908A /* Helpers */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		C2705D272CF4A6FF0001908A /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				C2705D2D2CF5054F0001908A /* NetworkMonitorMock.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		C28A369F2CEA500100D11E93 /* Repository */ = {
@@ -318,6 +312,7 @@
 				C28A36AC2CEA655800D11E93 /* Event.swift */,
 				C28A36AE2CEA67A100D11E93 /* EventList.swift */,
 				C2EEADD32CF33C9000B3C1AF /* Period.swift */,
+				C2AB56182DA2D55C00167487 /* Organizer.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -474,7 +469,7 @@
 			files = (
 				C26C46742CF7A25A00566F20 /* RequestFactoryTests.swift in Sources */,
 				C21BD0FE2CF7A7A10012C652 /* APIConstantsTests.swift in Sources */,
-				C2705D2E2CF5054F0001908A /* NetworkMonitorMock.swift in Sources */,
+				C252722F2D0B5BC50010F295 /* HTTPRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +484,7 @@
 				C2EEADD42CF33C9000B3C1AF /* Period.swift in Sources */,
 				C2380F0E2CE8B5A0006E56E2 /* HTTPRequestContract.swift in Sources */,
 				C28A36AA2CEA631E00D11E93 /* EventsRepository.swift in Sources */,
+				C2AB56192DA2D55C00167487 /* Organizer.swift in Sources */,
 				C2380F0F2CE8B5A0006E56E2 /* APIConstants.swift in Sources */,
 				C2380F182CE8C42A006E56E2 /* HTTPResponseContract.swift in Sources */,
 				C28A36AD2CEA655800D11E93 /* Event.swift in Sources */,
@@ -805,7 +801,7 @@
 			repositoryURL = "https://github.com/hmlongco/Factory.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.4.1;
+				minimumVersion = 2.4.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

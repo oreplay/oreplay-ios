@@ -2,8 +2,7 @@
 import Foundation
 import Network
 
-@DataActor
-final class HTTPRequest: HTTPRequestContract {
+actor HTTPRequest: HTTPRequestContract {
     
     enum Method: String, Sendable {
         case get = "GET"
@@ -13,22 +12,28 @@ final class HTTPRequest: HTTPRequestContract {
     }
     
     let url: String
-    private var method: Method = .get
-    private var headers: [String : String] = [:]
-    private var body: Data?
+    private(set) var method: Method = .get
+    private(set) var headers: [String : String] = [:]
+    private(set) var body: Data?
     private var printCurl = UserDefaults.standard.bool(forKey: "printCurl")
     private var printResponse = UserDefaults.standard.bool(forKey: "printLog")
-    private var cancellable: AnyCancellable?
     private(set) var urlSession: URLSessionContract = URLSession.shared
+    
+    @NetworkMonitorActor
+    private var cancellable: AnyCancellable?
+    
+    @NetworkMonitorActor
     private(set) var networkConexion = false
     
     // MARK: - Initializers
     init(_ path: String) {
         self.url = path
-        configureNetworkMonitor()
+        Task { [weak self] in
+            await self?.configureNetworkMonitor()
+        }
     }
     
-    convenience init(_ path: String, parameters: [String : String]?) {
+    init(_ path: String, parameters: [String : String]?) {
         self.init("\(path)\(HTTPRequest.getQuery(parameters))")
     }
     
@@ -64,7 +69,7 @@ final class HTTPRequest: HTTPRequestContract {
         }
         
         // 
-        guard networkConexion else {
+        guard await networkConexion else {
             throw HTTPError.noNetworkError
         }
 
@@ -74,14 +79,14 @@ final class HTTPRequest: HTTPRequestContract {
     }
     
     // MARK: - Private methods
-    @DataActor
+    @NetworkMonitorActor
     private func configureNetworkMonitor() {
         cancellable = NetworkMonitor.shared.$status.sink() { [weak self] status in
             self?.networkConexion = status == .connected
         }
     }
     
-    private class func getQuery(_ parameters: [String : String]?) -> String {
+    private static func getQuery(_ parameters: [String : String]?) -> String {
         
         guard let parameters = parameters, !parameters.isEmpty else { return "" }
         var queryParameters: [String] = []
