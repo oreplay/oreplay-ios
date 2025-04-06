@@ -11,27 +11,27 @@ struct HTTPRequestTests {
     }
     
     @Test
-    func initRequestWithoutParametersShouldCreateRequestWithEmptyParameters() throws {
+    func initRequestWithoutParametersShouldCreateRequestWithEmptyParameters() async throws {
         let request = HTTPRequest("https://example.com")
-        #expect(request.url == "https://example.com")
+        #expect(await request.url == "https://example.com")
     }
     
     @Test
-    func initRequestWithParametersShouldCreateRequestWithTheParameters() throws {
+    func initRequestWithParametersShouldCreateRequestWithTheParameters() async throws {
         let request = HTTPRequest("https://example.com", parameters: ["key": "value"])
-        #expect(request.url == "https://example.com?key=value")
+        #expect(await request.url == "https://example.com?key=value")
     }
     
     @Test
-    func addHeaderShouldAddHeaderToRequest() throws {
-        _ = sut.header("Content-Type", "application/json")
-        #expect(sut.headers["Content-Type"] == "application/json")
+    func addHeaderShouldAddHeaderToRequest() async throws {
+        _ = await sut.header("Content-Type", "application/json")
+        #expect(await sut.headers["Content-Type"] == "application/json")
     }
     
     @Test
-    func addBodyShouldAddBodyToRequest() throws {
+    func addBodyShouldAddBodyToRequest() async throws {
         let body = "body".data(using: .utf8)
-        _ = sut.body(data: body)
-        #expect(sut.body == body)
+        _ = await sut.body(data: body)
+        #expect(await sut.body == body)
     }
 }
