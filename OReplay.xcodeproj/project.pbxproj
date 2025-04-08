@@ -21,6 +21,10 @@
 		C2380F162CE8B7E6006E56E2 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2380F152CE8B7E6006E56E2 /* NetworkMonitor.swift */; };
 		C2380F182CE8C42A006E56E2 /* HTTPResponseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2380F172CE8C42A006E56E2 /* HTTPResponseContract.swift */; };
 		C252722F2D0B5BC50010F295 /* HTTPRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C252722E2D0B5BC50010F295 /* HTTPRequestTests.swift */; };
+		C254473F2DA4267500218270 /* EventsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254473E2DA4267500218270 /* EventsRepositoryTests.swift */; };
+		C25447432DA4286D00218270 /* RequestFactoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25447422DA4286D00218270 /* RequestFactoryMock.swift */; };
+		C25447462DA42B8C00218270 /* HTTPRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25447452DA42B8C00218270 /* HTTPRequestMock.swift */; };
+		C254474B2DA4360500218270 /* EventListMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254474A2DA4360500218270 /* EventListMock.swift */; };
 		C26C46712CF7A02D00566F20 /* NetworkMonitorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C46702CF7A02D00566F20 /* NetworkMonitorContract.swift */; };
 		C26C46742CF7A25A00566F20 /* RequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C46732CF7A25A00566F20 /* RequestFactoryTests.swift */; };
 		C28A36A22CEA56D200D11E93 /* DataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36A12CEA56D200D11E93 /* DataModule.swift */; };
@@ -29,6 +33,7 @@
 		C28A36AA2CEA631E00D11E93 /* EventsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36A92CEA631E00D11E93 /* EventsRepository.swift */; };
 		C28A36AD2CEA655800D11E93 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36AC2CEA655800D11E93 /* Event.swift */; };
 		C28A36AF2CEA67A100D11E93 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36AE2CEA67A100D11E93 /* EventList.swift */; };
+		C2A077572DA57DEF00E1650D /* PeriodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A077562DA57DEF00E1650D /* PeriodTests.swift */; };
 		C2AB56192DA2D55C00167487 /* Organizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB56182DA2D55C00167487 /* Organizer.swift */; };
 		C2AB561B2DA2E01500167487 /* HTTPResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB561A2DA2E01500167487 /* HTTPResponseTests.swift */; };
 		C2AB561E2DA2E0F100167487 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB561D2DA2E0F100167487 /* Utils.swift */; };
@@ -95,6 +100,10 @@
 		C2380F152CE8B7E6006E56E2 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		C2380F172CE8C42A006E56E2 /* HTTPResponseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseContract.swift; sourceTree = "<group>"; };
 		C252722E2D0B5BC50010F295 /* HTTPRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestTests.swift; sourceTree = "<group>"; };
+		C254473E2DA4267500218270 /* EventsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepositoryTests.swift; sourceTree = "<group>"; };
+		C25447422DA4286D00218270 /* RequestFactoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryMock.swift; sourceTree = "<group>"; };
+		C25447452DA42B8C00218270 /* HTTPRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestMock.swift; sourceTree = "<group>"; };
+		C254474A2DA4360500218270 /* EventListMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListMock.swift; sourceTree = "<group>"; };
 		C26C46702CF7A02D00566F20 /* NetworkMonitorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorContract.swift; sourceTree = "<group>"; };
 		C26C46732CF7A25A00566F20 /* RequestFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryTests.swift; sourceTree = "<group>"; };
 		C28A36A12CEA56D200D11E93 /* DataModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModule.swift; sourceTree = "<group>"; };
@@ -102,6 +111,7 @@
 		C28A36A92CEA631E00D11E93 /* EventsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepository.swift; sourceTree = "<group>"; };
 		C28A36AC2CEA655800D11E93 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C28A36AE2CEA67A100D11E93 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		C2A077562DA57DEF00E1650D /* PeriodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodTests.swift; sourceTree = "<group>"; };
 		C2AB56182DA2D55C00167487 /* Organizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organizer.swift; sourceTree = "<group>"; };
 		C2AB561A2DA2E01500167487 /* HTTPResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseTests.swift; sourceTree = "<group>"; };
 		C2AB561D2DA2E0F100167487 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -182,6 +192,7 @@
 		692DEC6D97D90A5FB1F055D2 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C2A077542DA57D6B00E1650D /* Domain */,
 				C2705D262CF4A6EA0001908A /* Data */,
 				C2AB561D2DA2E0F100167487 /* Utils.swift */,
 			);
@@ -270,6 +281,16 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		C25447412DA4285C00218270 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C25447422DA4286D00218270 /* RequestFactoryMock.swift */,
+				C25447452DA42B8C00218270 /* HTTPRequestMock.swift */,
+				C254474A2DA4360500218270 /* EventListMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		C26C46722CF7A23C00566F20 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +305,8 @@
 		C2705D262CF4A6EA0001908A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C25447412DA4285C00218270 /* Mocks */,
+				C2AB561F2DA2F09800167487 /* Repository */,
 				C26C46722CF7A23C00566F20 /* Network */,
 			);
 			path = Data;
@@ -321,6 +344,30 @@
 				C2AB56182DA2D55C00167487 /* Organizer.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		C2A077542DA57D6B00E1650D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C2A077552DA57DD500E1650D /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C2A077552DA57DD500E1650D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C2A077562DA57DEF00E1650D /* PeriodTests.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C2AB561F2DA2F09800167487 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C254473E2DA4267500218270 /* EventsRepositoryTests.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		C2D7CE3E2CF26AB1005017E2 /* UseCases */ = {
@@ -476,7 +523,12 @@
 				C2AB561E2DA2E0F100167487 /* Utils.swift in Sources */,
 				C2AB561B2DA2E01500167487 /* HTTPResponseTests.swift in Sources */,
 				C26C46742CF7A25A00566F20 /* RequestFactoryTests.swift in Sources */,
+				C254474B2DA4360500218270 /* EventListMock.swift in Sources */,
+				C25447462DA42B8C00218270 /* HTTPRequestMock.swift in Sources */,
 				C21BD0FE2CF7A7A10012C652 /* APIConstantsTests.swift in Sources */,
+				C254473F2DA4267500218270 /* EventsRepositoryTests.swift in Sources */,
+				C25447432DA4286D00218270 /* RequestFactoryMock.swift in Sources */,
+				C2A077572DA57DEF00E1650D /* PeriodTests.swift in Sources */,
 				C252722F2D0B5BC50010F295 /* HTTPRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

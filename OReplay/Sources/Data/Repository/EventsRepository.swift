@@ -7,8 +7,16 @@ enum EventError: Error {
 }
 
 final class EventsRepository: EventsRepositoryContract {
-    @Injected(\.requestFactory) var requestFactory
+    private let requestFactory: any RequestFactoryContract
     let defaultPageLimit = "20"
+    
+    convenience init() {
+        @Injected(\.requestFactory) var requestFactory
+        self.init(requestFactory: requestFactory)
+    }
+    init(requestFactory: any RequestFactoryContract) {
+        self.requestFactory = requestFactory
+    }
     
     func getEvents(page: String, limit: String?, period: String) async throws -> EventList {
         let limit = limit ?? defaultPageLimit
