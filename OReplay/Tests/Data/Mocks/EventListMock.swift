@@ -6,11 +6,14 @@ struct EventListMock {
     static func dummyData(numberOfEvents: Int, totalEvents: Int? = nil) -> Data {
         let total = totalEvents != nil ? totalEvents! : numberOfEvents
         var string = "{\"data\": [ "
+        
         for _ in 0..<numberOfEvents {
             string += eventString
         }
+        
         string = String(string.dropLast(1))
         string += "], \"total\": \(String(total)), \"limit\": \(String(numberOfEvents))}"
+        
         return string.toData
     }
     

@@ -14,6 +14,7 @@ final class EventsRepository: EventsRepositoryContract {
         @Injected(\.requestFactory) var requestFactory
         self.init(requestFactory: requestFactory)
     }
+    
     init(requestFactory: any RequestFactoryContract) {
         self.requestFactory = requestFactory
     }

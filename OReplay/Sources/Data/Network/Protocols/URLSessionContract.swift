@@ -3,6 +3,7 @@ import Foundation
 protocol URLSessionContract: Sendable {
     func dataTask(with request: URLRequest,
                   completionHandler: @escaping @Sendable (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
+    
     func data(for request: URLRequest, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)
 }
 

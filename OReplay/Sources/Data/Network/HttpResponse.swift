@@ -48,5 +48,4 @@ final class HTTPResponse: HTTPResponseContract {
         
         return try? decoder.decode(type, from: rawData)
     }
-    
 }

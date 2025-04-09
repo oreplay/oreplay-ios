@@ -3,9 +3,7 @@ protocol RequestFactoryContract {
 }
 
 extension RequestFactoryContract {
-    
     func create(path: String, parameters: [String : String]? = nil) -> HTTPRequestContract {
         create(path: path, parameters: parameters)
     }
-    
 }

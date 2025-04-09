@@ -4,6 +4,7 @@ import Factory
 @MainActor
 final class EventListViewModel: ObservableObject {
     @Injected(\.eventsUseCase) var useCase
+    
     @Published var eventList: [Event] = []
     
     var page: Int = 0
@@ -30,5 +31,4 @@ final class EventListViewModel: ObservableObject {
         eventList.removeAll()
         hasMorePages = true
     }
-    
 }

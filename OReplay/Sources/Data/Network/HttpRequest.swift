@@ -62,20 +62,17 @@ actor HTTPRequest: HTTPRequestContract {
     }
     
     func connect() async throws -> HTTPResponseContract {
-        
         // Bail out at the beginning if the url is not valid
         guard let url = URL(string: url) else {
             throw HTTPError.invalidUrl
         }
         
-        // 
         guard await networkConexion else {
             throw HTTPError.noNetworkError
         }
 
         // Return the prepared request
         return try await prepareRequest(url)
-        
     }
     
     // MARK: - Private methods
@@ -87,8 +84,8 @@ actor HTTPRequest: HTTPRequestContract {
     }
     
     private static func getQuery(_ parameters: [String : String]?) -> String {
-        
         guard let parameters = parameters, !parameters.isEmpty else { return "" }
+        
         var queryParameters: [String] = []
         
         for (key, value) in parameters {
@@ -97,11 +94,9 @@ actor HTTPRequest: HTTPRequestContract {
         }
         
         return "?" + queryParameters.joined(separator: "&")
-        
     }
     
     private func prepareRequest(_ url: URL) async throws -> HTTPResponseContract {
-        
         // Create the request with its URL and method
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
@@ -122,11 +117,9 @@ actor HTTPRequest: HTTPRequestContract {
         
         #endif
         return try await sendRequest(request)
-        
     }
     
     private func sendRequest(_ request: URLRequest) async throws -> HTTPResponseContract {
-        
         let (data, response) = try await urlSession.data(for: request)
         guard let response = response as? HTTPURLResponse else {
             throw HTTPError.unknownNetworkError
@@ -138,12 +131,10 @@ actor HTTPRequest: HTTPRequestContract {
         }
         #endif
         return HTTPResponse(response.statusCode, data)
-
     }
     
     #if DEBUG
     private func logCurl() {
-        
         var components = [ "curl", "'\(url)'", "-X", method.rawValue ]
         
         for (name, value) in headers {
@@ -159,11 +150,9 @@ actor HTTPRequest: HTTPRequestContract {
         let curl = components.joined(separator: " ")
         
         print(curl)
-        
     }
     
     private func logResponse(data: Data?, response: HTTPURLResponse) {
-        
         var response = "HEADERS: \(response.allHeaderFields)\n\n"
         
         if let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) {
@@ -171,8 +160,6 @@ actor HTTPRequest: HTTPRequestContract {
         }
         
         print(response)
-        
     }
     #endif
-    
 }
