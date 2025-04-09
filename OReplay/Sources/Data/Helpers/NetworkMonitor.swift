@@ -14,7 +14,6 @@ actor NetworkMonitorActor {
 
 @NetworkMonitorActor
 final class NetworkMonitor: NetworkMonitorContract, ObservableObject {
-    
     static let shared = NetworkMonitor()
     private let monitor = NWPathMonitor()
     private let queue = DispatchQueue(label: "Monitor")
@@ -22,7 +21,7 @@ final class NetworkMonitor: NetworkMonitorContract, ObservableObject {
     @Published var status: NetworkStatus = .connected
     
     private init() {
-        monitor.pathUpdateHandler = { path in
+        monitor.pathUpdateHandler = { [weak self] path in
             Task { [weak self] in
                 await self?.updateStatus(path.status == .satisfied ? .connected : .disconnected)
             }
@@ -36,5 +35,4 @@ final class NetworkMonitor: NetworkMonitorContract, ObservableObject {
     private func updateStatus(_ status: NetworkStatus) {
         self.status = status
     }
-    
 }

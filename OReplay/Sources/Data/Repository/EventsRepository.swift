@@ -28,5 +28,4 @@ final class EventsRepository: EventsRepositoryContract {
         
         return try response.ifOk()?.as(EventList.self) ?? { throw EventError.invalidResponse }()
     }
-    
 }

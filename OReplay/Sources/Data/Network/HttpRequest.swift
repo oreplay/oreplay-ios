@@ -129,6 +129,7 @@ actor HTTPRequest: HTTPRequestContract {
         if printResponse == true {
             logResponse(data: data, response: response)
         }
+        
         #endif
         return HTTPResponse(response.statusCode, data)
     }
