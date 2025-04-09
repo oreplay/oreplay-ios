@@ -34,6 +34,11 @@
 		C28A36AD2CEA655800D11E93 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36AC2CEA655800D11E93 /* Event.swift */; };
 		C28A36AF2CEA67A100D11E93 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36AE2CEA67A100D11E93 /* EventList.swift */; };
 		C2A077572DA57DEF00E1650D /* PeriodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A077562DA57DEF00E1650D /* PeriodTests.swift */; };
+		C2A0775A2DA580E900E1650D /* EventsUseCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A077592DA580E900E1650D /* EventsUseCasesTests.swift */; };
+		C2A0775D2DA5817B00E1650D /* EventRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0775C2DA5817B00E1650D /* EventRepositoryMock.swift */; };
+		C2A0775F2DA5829B00E1650D /* EventList+Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0775E2DA5829B00E1650D /* EventList+Dummy.swift */; };
+		C2A077612DA5839E00E1650D /* Event+Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A077602DA5839E00E1650D /* Event+Dummy.swift */; };
+		C2A077632DA584A600E1650D /* Organizer+dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A077622DA584A600E1650D /* Organizer+dummy.swift */; };
 		C2AB56192DA2D55C00167487 /* Organizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB56182DA2D55C00167487 /* Organizer.swift */; };
 		C2AB561B2DA2E01500167487 /* HTTPResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB561A2DA2E01500167487 /* HTTPResponseTests.swift */; };
 		C2AB561E2DA2E0F100167487 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB561D2DA2E0F100167487 /* Utils.swift */; };
@@ -112,6 +117,11 @@
 		C28A36AC2CEA655800D11E93 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C28A36AE2CEA67A100D11E93 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		C2A077562DA57DEF00E1650D /* PeriodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodTests.swift; sourceTree = "<group>"; };
+		C2A077592DA580E900E1650D /* EventsUseCasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsUseCasesTests.swift; sourceTree = "<group>"; };
+		C2A0775C2DA5817B00E1650D /* EventRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepositoryMock.swift; sourceTree = "<group>"; };
+		C2A0775E2DA5829B00E1650D /* EventList+Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventList+Dummy.swift"; sourceTree = "<group>"; };
+		C2A077602DA5839E00E1650D /* Event+Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+Dummy.swift"; sourceTree = "<group>"; };
+		C2A077622DA584A600E1650D /* Organizer+dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Organizer+dummy.swift"; sourceTree = "<group>"; };
 		C2AB56182DA2D55C00167487 /* Organizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organizer.swift; sourceTree = "<group>"; };
 		C2AB561A2DA2E01500167487 /* HTTPResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseTests.swift; sourceTree = "<group>"; };
 		C2AB561D2DA2E0F100167487 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -287,6 +297,7 @@
 				C25447422DA4286D00218270 /* RequestFactoryMock.swift */,
 				C25447452DA42B8C00218270 /* HTTPRequestMock.swift */,
 				C254474A2DA4360500218270 /* EventListMock.swift */,
+				C2A0775C2DA5817B00E1650D /* EventRepositoryMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -349,6 +360,8 @@
 		C2A077542DA57D6B00E1650D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C2A0775B2DA5815000E1650D /* Mocks */,
+				C2A077582DA580D000E1650D /* UseCases */,
 				C2A077552DA57DD500E1650D /* Entities */,
 			);
 			path = Domain;
@@ -360,6 +373,24 @@
 				C2A077562DA57DEF00E1650D /* PeriodTests.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		C2A077582DA580D000E1650D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C2A077592DA580E900E1650D /* EventsUseCasesTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C2A0775B2DA5815000E1650D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C2A0775E2DA5829B00E1650D /* EventList+Dummy.swift */,
+				C2A077602DA5839E00E1650D /* Event+Dummy.swift */,
+				C2A077622DA584A600E1650D /* Organizer+dummy.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		C2AB561F2DA2F09800167487 /* Repository */ = {
@@ -520,11 +551,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A077632DA584A600E1650D /* Organizer+dummy.swift in Sources */,
+				C2A0775A2DA580E900E1650D /* EventsUseCasesTests.swift in Sources */,
 				C2AB561E2DA2E0F100167487 /* Utils.swift in Sources */,
 				C2AB561B2DA2E01500167487 /* HTTPResponseTests.swift in Sources */,
 				C26C46742CF7A25A00566F20 /* RequestFactoryTests.swift in Sources */,
+				C2A0775D2DA5817B00E1650D /* EventRepositoryMock.swift in Sources */,
 				C254474B2DA4360500218270 /* EventListMock.swift in Sources */,
 				C25447462DA42B8C00218270 /* HTTPRequestMock.swift in Sources */,
+				C2A077612DA5839E00E1650D /* Event+Dummy.swift in Sources */,
+				C2A0775F2DA5829B00E1650D /* EventList+Dummy.swift in Sources */,
 				C21BD0FE2CF7A7A10012C652 /* APIConstantsTests.swift in Sources */,
 				C254473F2DA4267500218270 /* EventsRepositoryTests.swift in Sources */,
 				C25447432DA4286D00218270 /* RequestFactoryMock.swift in Sources */,

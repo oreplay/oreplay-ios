@@ -20,6 +20,7 @@ struct EventsRepositoryTests {
     @Test
     func getEvents_shouldReturnsAnEventList() async throws {
         let result = try await sut.getEvents(page: "1", limit: "1", period: "today")
+        #expect(repository.createRequestTimesCalled == 1)
         #expect(result.events.count == 1)
     }
     
@@ -29,6 +30,7 @@ struct EventsRepositoryTests {
         await #expect(throws: HTTPError.unknownNetworkError) {
             try await sut.getEvents(page: "1", limit: "1", period: "today")
         }
+        #expect(repository.createRequestTimesCalled == 1)
     }
     
     @Test
@@ -37,11 +39,13 @@ struct EventsRepositoryTests {
         await #expect(throws: EventError.invalidResponse) {
             try await sut.getEvents(page: "1", limit: "1", period: "today")
         }
+        #expect(repository.createRequestTimesCalled == 1)
     }
     
     @Test
     func getEvents_withNilLimit_shouldReturnsDefaultPageLimitElements() async throws {
         let result = try await sut.getEvents(page: "1", limit: nil, period: "today")
+        #expect(repository.createRequestTimesCalled == 1)
         #expect(result.events.count == Int(sut.defaultPageLimit))
     }
 }

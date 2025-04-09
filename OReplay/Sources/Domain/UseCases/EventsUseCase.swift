@@ -1,7 +1,16 @@
 import Factory
 
 final class EventsUseCase: EventsUseCaseContract {
-    @Injected(\.eventsRepository) var repository
+    private let repository: EventsRepositoryContract
+    
+    convenience init() {
+        @Injected(\.eventsRepository) var repository
+        self.init(repository: repository)
+    }
+    
+    init(repository: EventsRepositoryContract) {
+        self.repository = repository
+    }
     
     func run(page: Int, period: Period) async throws -> ([Event], Bool) {
         switch period {
@@ -18,16 +27,16 @@ final class EventsUseCase: EventsUseCaseContract {
     
     private func fetchPastEvents(page: Int) async throws -> ([Event], Bool) {
         let list = try await repository.getEvents(page: String(page), limit: nil, period: Period.past.toString)
-        return (list.events, list.total == list.limit)
+        return (list.events, (!list.events.isEmpty && list.limit == list.events.count))
     }
     
     private func fetchTodayEvents() async throws -> ([Event], Bool) {
         let list = try await repository.getEvents(page: "1", limit: "100", period: Period.today.toString)
-        return (list.events, list.total == list.limit)
+        return (list.events, (!list.events.isEmpty && list.limit == list.events.count))
     }
     
     private func fetchUpcomingEvents(page: Int) async throws -> ([Event], Bool) {
         let list = try await repository.getEvents(page: String(page), limit: nil, period: Period.future.toString)
-        return (list.events, list.total == list.limit)
+        return (list.events, (!list.events.isEmpty && list.limit == list.events.count))
     }
 }
