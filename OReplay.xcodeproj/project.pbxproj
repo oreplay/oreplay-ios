@@ -27,6 +27,12 @@
 		C254474B2DA4360500218270 /* EventListMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254474A2DA4360500218270 /* EventListMock.swift */; };
 		C26C46712CF7A02D00566F20 /* NetworkMonitorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C46702CF7A02D00566F20 /* NetworkMonitorContract.swift */; };
 		C26C46742CF7A25A00566F20 /* RequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C46732CF7A25A00566F20 /* RequestFactoryTests.swift */; };
+		C280C3552DA8631600170B5A /* EventCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C280C3542DA8631600170B5A /* EventCardViewModel.swift */; };
+		C280C35B2DA867D300170B5A /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C280C3572DA867D300170B5A /* Roboto-Bold.ttf */; };
+		C280C35C2DA867D300170B5A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C280C35A2DA867D300170B5A /* Roboto-Regular.ttf */; };
+		C280C35D2DA867D300170B5A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C280C3582DA867D300170B5A /* Roboto-Light.ttf */; };
+		C280C35E2DA867D300170B5A /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C280C3592DA867D300170B5A /* Roboto-Medium.ttf */; };
+		C280C3612DA8694500170B5A /* Font+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C280C3602DA8694500170B5A /* Font+Additions.swift */; };
 		C28A36A22CEA56D200D11E93 /* DataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36A12CEA56D200D11E93 /* DataModule.swift */; };
 		C28A36A52CEA576C00D11E93 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = C28A36A42CEA576C00D11E93 /* Factory */; };
 		C28A36A82CEA5FDF00D11E93 /* EventsRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36A72CEA5FDF00D11E93 /* EventsRepositoryContract.swift */; };
@@ -42,6 +48,9 @@
 		C2AB56192DA2D55C00167487 /* Organizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB56182DA2D55C00167487 /* Organizer.swift */; };
 		C2AB561B2DA2E01500167487 /* HTTPResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB561A2DA2E01500167487 /* HTTPResponseTests.swift */; };
 		C2AB561E2DA2E0F100167487 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB561D2DA2E0F100167487 /* Utils.swift */; };
+		C2B5E3A02DA83EF700191643 /* EventCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5E39F2DA83EF700191643 /* EventCard.swift */; };
+		C2C5C8142DA9837700328E79 /* View+ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5C8132DA9837700328E79 /* View+ViewModifiers.swift */; };
+		C2C5C8182DA98DE300328E79 /* Fonts+AdditionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5C8172DA98DE300328E79 /* Fonts+AdditionsTests.swift */; };
 		C2EEADCA2CF3187600B3C1AF /* EventsUseCaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EEADC92CF3187600B3C1AF /* EventsUseCaseContract.swift */; };
 		C2EEADCC2CF3208D00B3C1AF /* EventsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EEADCB2CF3208D00B3C1AF /* EventsUseCase.swift */; };
 		C2EEADCE2CF3212F00B3C1AF /* DomainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EEADCD2CF3212F00B3C1AF /* DomainModule.swift */; };
@@ -111,6 +120,12 @@
 		C254474A2DA4360500218270 /* EventListMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListMock.swift; sourceTree = "<group>"; };
 		C26C46702CF7A02D00566F20 /* NetworkMonitorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorContract.swift; sourceTree = "<group>"; };
 		C26C46732CF7A25A00566F20 /* RequestFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryTests.swift; sourceTree = "<group>"; };
+		C280C3542DA8631600170B5A /* EventCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardViewModel.swift; sourceTree = "<group>"; };
+		C280C3572DA867D300170B5A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		C280C3582DA867D300170B5A /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		C280C3592DA867D300170B5A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		C280C35A2DA867D300170B5A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		C280C3602DA8694500170B5A /* Font+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Additions.swift"; sourceTree = "<group>"; };
 		C28A36A12CEA56D200D11E93 /* DataModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModule.swift; sourceTree = "<group>"; };
 		C28A36A72CEA5FDF00D11E93 /* EventsRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepositoryContract.swift; sourceTree = "<group>"; };
 		C28A36A92CEA631E00D11E93 /* EventsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepository.swift; sourceTree = "<group>"; };
@@ -125,6 +140,9 @@
 		C2AB56182DA2D55C00167487 /* Organizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organizer.swift; sourceTree = "<group>"; };
 		C2AB561A2DA2E01500167487 /* HTTPResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseTests.swift; sourceTree = "<group>"; };
 		C2AB561D2DA2E0F100167487 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C2B5E39F2DA83EF700191643 /* EventCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCard.swift; sourceTree = "<group>"; };
+		C2C5C8132DA9837700328E79 /* View+ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ViewModifiers.swift"; sourceTree = "<group>"; };
+		C2C5C8172DA98DE300328E79 /* Fonts+AdditionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+AdditionsTests.swift"; sourceTree = "<group>"; };
 		C2EEADC92CF3187600B3C1AF /* EventsUseCaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsUseCaseContract.swift; sourceTree = "<group>"; };
 		C2EEADCB2CF3208D00B3C1AF /* EventsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsUseCase.swift; sourceTree = "<group>"; };
 		C2EEADCD2CF3212F00B3C1AF /* DomainModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModule.swift; sourceTree = "<group>"; };
@@ -156,6 +174,7 @@
 		186DFD218525E0BCF86848FE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C280C3562DA8679200170B5A /* Fonts */,
 				80A6BA1C9042295585199D95 /* SupportingFiles */,
 				B717D507801264EB75648CD1 /* Preview Content */,
 				7C96719885D4AD93ABE20966 /* Assets.xcassets */,
@@ -202,6 +221,7 @@
 		692DEC6D97D90A5FB1F055D2 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C2C5C8152DA98DAE00328E79 /* Presentation */,
 				C2A077542DA57D6B00E1650D /* Domain */,
 				C2705D262CF4A6EA0001908A /* Data */,
 				C2AB561D2DA2E0F100167487 /* Utils.swift */,
@@ -250,9 +270,11 @@
 		C2380F012CE8B360006E56E2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				C2D7CE3F2CF26AD0005017E2 /* Screens */,
+				C2B5E39B2DA83E8B00191643 /* Components */,
 				C2D7CE402CF26AE8005017E2 /* UseCases */,
+				C280C35F2DA868C600170B5A /* Utils */,
 				EC2972D8C0F6ABF755A1C7A8 /* ProjectApp.swift */,
-				C2D7CE3F2CF26AD0005017E2 /* Views */,
 				C2EEADCF2CF3289A00B3C1AF /* PresentationModule.swift */,
 			);
 			path = Presentation;
@@ -321,6 +343,26 @@
 				C26C46722CF7A23C00566F20 /* Network */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		C280C3562DA8679200170B5A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C280C3572DA867D300170B5A /* Roboto-Bold.ttf */,
+				C280C3582DA867D300170B5A /* Roboto-Light.ttf */,
+				C280C3592DA867D300170B5A /* Roboto-Medium.ttf */,
+				C280C35A2DA867D300170B5A /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C280C35F2DA868C600170B5A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C280C3602DA8694500170B5A /* Font+Additions.swift */,
+				C2C5C8132DA9837700328E79 /* View+ViewModifiers.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		C28A369F2CEA500100D11E93 /* Repository */ = {
@@ -401,6 +443,39 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		C2B5E39B2DA83E8B00191643 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C2B5E39C2DA83EAB00191643 /* EventCard */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C2B5E39C2DA83EAB00191643 /* EventCard */ = {
+			isa = PBXGroup;
+			children = (
+				C2B5E39F2DA83EF700191643 /* EventCard.swift */,
+				C280C3542DA8631600170B5A /* EventCardViewModel.swift */,
+			);
+			path = EventCard;
+			sourceTree = "<group>";
+		};
+		C2C5C8152DA98DAE00328E79 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C2C5C8162DA98DC400328E79 /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C2C5C8162DA98DC400328E79 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C2C5C8172DA98DE300328E79 /* Fonts+AdditionsTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C2D7CE3E2CF26AB1005017E2 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,13 +484,13 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
-		C2D7CE3F2CF26AD0005017E2 /* Views */ = {
+		C2D7CE3F2CF26AD0005017E2 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				932ADE2086B10118F664DA0A /* ContentView.swift */,
 				C2EEADD12CF3311200B3C1AF /* EventListViewModel.swift */,
 			);
-			path = Views;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		C2D7CE402CF26AE8005017E2 /* UseCases */ = {
@@ -534,6 +609,10 @@
 			files = (
 				3DF2000D18F5F515B3D8FB2A /* Assets.xcassets in Resources */,
 				F570B6488D49DA6DBD57609A /* Preview Assets.xcassets in Resources */,
+				C280C35B2DA867D300170B5A /* Roboto-Bold.ttf in Resources */,
+				C280C35C2DA867D300170B5A /* Roboto-Regular.ttf in Resources */,
+				C280C35D2DA867D300170B5A /* Roboto-Light.ttf in Resources */,
+				C280C35E2DA867D300170B5A /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +642,7 @@
 				C2A0775F2DA5829B00E1650D /* EventList+Dummy.swift in Sources */,
 				C21BD0FE2CF7A7A10012C652 /* APIConstantsTests.swift in Sources */,
 				C254473F2DA4267500218270 /* EventsRepositoryTests.swift in Sources */,
+				C2C5C8182DA98DE300328E79 /* Fonts+AdditionsTests.swift in Sources */,
 				C25447432DA4286D00218270 /* RequestFactoryMock.swift in Sources */,
 				C2A077572DA57DEF00E1650D /* PeriodTests.swift in Sources */,
 				C252722F2D0B5BC50010F295 /* HTTPRequestTests.swift in Sources */,
@@ -573,8 +653,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C280C3612DA8694500170B5A /* Font+Additions.swift in Sources */,
 				C2380F162CE8B7E6006E56E2 /* NetworkMonitor.swift in Sources */,
 				9CCBC12E3BDE2BCBED2053E0 /* ContentView.swift in Sources */,
+				C2C5C8142DA9837700328E79 /* View+ViewModifiers.swift in Sources */,
 				C2380F0C2CE8B5A0006E56E2 /* HTTPError.swift in Sources */,
 				C2380F0D2CE8B5A0006E56E2 /* URLSessionContract.swift in Sources */,
 				C2EEADD42CF33C9000B3C1AF /* Period.swift in Sources */,
@@ -585,6 +667,7 @@
 				C2380F182CE8C42A006E56E2 /* HTTPResponseContract.swift in Sources */,
 				C28A36AD2CEA655800D11E93 /* Event.swift in Sources */,
 				C28A36AF2CEA67A100D11E93 /* EventList.swift in Sources */,
+				C2B5E3A02DA83EF700191643 /* EventCard.swift in Sources */,
 				C2380F102CE8B5A0006E56E2 /* HTTPResponse.swift in Sources */,
 				C2EEADD02CF3289A00B3C1AF /* PresentationModule.swift in Sources */,
 				C2EEADCE2CF3212F00B3C1AF /* DomainModule.swift in Sources */,
@@ -595,6 +678,7 @@
 				C28A36A22CEA56D200D11E93 /* DataModule.swift in Sources */,
 				C2380F112CE8B5A0006E56E2 /* RequestFactory.swift in Sources */,
 				C2380F122CE8B5A0006E56E2 /* HTTPRequest.swift in Sources */,
+				C280C3552DA8631600170B5A /* EventCardViewModel.swift in Sources */,
 				C2380F132CE8B5A0006E56E2 /* RequestFactoryContract.swift in Sources */,
 				EC1754D0A331A25AA52AC9EC /* ProjectApp.swift in Sources */,
 				C2EEADD22CF3311200B3C1AF /* EventListViewModel.swift in Sources */,
