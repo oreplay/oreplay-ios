@@ -24,6 +24,8 @@ private extension Header {
             
             title
                 .padding(.horizontal, 16)
+                .accessibilityAddTraits(.isHeader)
+                .accessibilityLabel(viewModel.a11yValue)
         }
     }
     
@@ -51,7 +53,7 @@ private extension Header {
                 .resizable()
                 .scaledToFit()
                 .frame(height: 25)
-                .accessibilityLabel(viewModel.a11yValue)
+                .accessibilityRemoveTraits(.isImage)
         }
     }
 }

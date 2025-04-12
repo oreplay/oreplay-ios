@@ -16,7 +16,7 @@ final class HeaderViewModel: ObservableObject {
         self.style = style
         self.backButton = backButton
         self.a11yValue = if let a11yValue {
-            a11yValue
+            a11yValue.localized
         } else {
             if case .text(let text) = style {
                 text
