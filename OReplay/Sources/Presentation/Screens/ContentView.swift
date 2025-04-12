@@ -10,7 +10,7 @@ public struct ContentView: View {
                 .ignoresSafeArea(edges: .all)
             
             VStack {
-                Header(viewModel: HeaderViewModel(style: .text("O-Replay")) {
+                Header(viewModel: HeaderViewModel(style: .image(.logoDark), a11yValue: "a11y_header_logo") {
                     print("back tapped")
                 })
                 Spacer()
