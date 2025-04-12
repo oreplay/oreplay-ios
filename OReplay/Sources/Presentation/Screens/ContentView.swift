@@ -5,22 +5,15 @@ public struct ContentView: View {
     @ObservedObject private var viewModel = EventListViewModel()
 
     public var body: some View {
-        VStack {
+        ZStack {
+            Color(.background95)
+                .ignoresSafeArea(edges: .all)
             
-            Picker("Filtrar eventos", selection: $periodSelected) {
-                Text("Pasado").tag(Period.past)
-                Text("Hoy").tag(Period.today)
-                Text("Futuros").tag(Period.future)
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
-            .onChange(of: periodSelected, initial: true) { (oldPeriod, newPeriod) in
-                viewModel.reset()
-                viewModel.fetchEvents(period: newPeriod)
-            }
-            
-            List(viewModel.eventList) { event in
-                Text(event.description)
+            VStack {
+                Header(viewModel: HeaderViewModel(style: .text("O-Replay")) {
+                    print("back tapped")
+                })
+                Spacer()
             }
         }
     }
