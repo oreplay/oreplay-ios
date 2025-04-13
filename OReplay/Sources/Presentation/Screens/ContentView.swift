@@ -10,9 +10,11 @@ public struct ContentView: View {
                 .ignoresSafeArea(edges: .all)
             
             VStack {
-                Header(viewModel: HeaderViewModel(style: .image(.logoDark), a11yValue: "a11y_header_logo") {
-                    print("back tapped")
-                })
+                let options = [ToolBarViewModel.Option(title: "FUTURE EVENTS"),
+                               ToolBarViewModel.Option(title: "PAST EVENTS")]
+                ToolBar(viewModel: ToolBarViewModel(options: options)) {
+                    print("selected \($0)")
+                }
                 Spacer()
             }
         }
