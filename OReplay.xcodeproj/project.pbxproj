@@ -73,6 +73,7 @@
 		C2EEADD02CF3289A00B3C1AF /* PresentationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EEADCF2CF3289A00B3C1AF /* PresentationModule.swift */; };
 		C2EEADD22CF3311200B3C1AF /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EEADD12CF3311200B3C1AF /* EventListViewModel.swift */; };
 		C2EEADD42CF33C9000B3C1AF /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EEADD32CF33C9000B3C1AF /* Period.swift */; };
+		C2EFEFAB2DAC37AB00CB80DC /* ToolBarViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EFEFAA2DAC37AB00CB80DC /* ToolBarViewModelTests.swift */; };
 		EC1754D0A331A25AA52AC9EC /* ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2972D8C0F6ABF755A1C7A8 /* ProjectApp.swift */; };
 		F570B6488D49DA6DBD57609A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A1B348106A2C984165905F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -169,6 +170,7 @@
 		C2EEADCF2CF3289A00B3C1AF /* PresentationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationModule.swift; sourceTree = "<group>"; };
 		C2EEADD12CF3311200B3C1AF /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 		C2EEADD32CF33C9000B3C1AF /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
+		C2EFEFAA2DAC37AB00CB80DC /* ToolBarViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarViewModelTests.swift; sourceTree = "<group>"; };
 		EC2972D8C0F6ABF755A1C7A8 /* ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -372,6 +374,7 @@
 		C27049F02DAAE3F000DED2C2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C2EFEFA92DAC378300CB80DC /* ToolBar */,
 				C27049F12DAAE3FE00DED2C2 /* Header */,
 			);
 			path = Components;
@@ -573,6 +576,14 @@
 			path = ToolBar;
 			sourceTree = "<group>";
 		};
+		C2EFEFA92DAC378300CB80DC /* ToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				C2EFEFAA2DAC37AB00CB80DC /* ToolBarViewModelTests.swift */,
+			);
+			path = ToolBar;
+			sourceTree = "<group>";
+		};
 		F2B3034671FE9D809629958C /* OReplay */ = {
 			isa = PBXGroup;
 			children = (
@@ -714,6 +725,7 @@
 				C2A077612DA5839E00E1650D /* Event+Dummy.swift in Sources */,
 				C2A0775F2DA5829B00E1650D /* EventList+Dummy.swift in Sources */,
 				C27049F32DAAE41F00DED2C2 /* HeaderViewModelTest.swift in Sources */,
+				C2EFEFAB2DAC37AB00CB80DC /* ToolBarViewModelTests.swift in Sources */,
 				C21BD0FE2CF7A7A10012C652 /* APIConstantsTests.swift in Sources */,
 				C254473F2DA4267500218270 /* EventsRepositoryTests.swift in Sources */,
 				C2C5C8182DA98DE300328E79 /* Fonts+AdditionsTests.swift in Sources */,
