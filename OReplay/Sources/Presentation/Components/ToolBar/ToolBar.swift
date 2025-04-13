@@ -61,17 +61,32 @@ private extension ToolBar {
             }
         }
         .frame(height: 2)
+        .accessibilityHidden(true)
     }
     
     @ViewBuilder func option(index: Int) -> some View {
-        Text(viewModel.options[index].title)
+        let option = viewModel.options[index]
+        let selected = viewModel.selectedIndex == index
+        Text(option.title)
             .font(.toolbar)
-            .foregroundColor(viewModel.selectedIndex == index ? .textPrimary : .text40)
+            .foregroundColor(selected ? .textPrimary : .text40)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 8)
+            .accessibilityIdentifier(option.a11yIdentifier)
+            .accessibilityLabel(option.a11yLabel)
+            .accessibilityAddTraits(addTraits(selected: selected))
+            .accessibilityRemoveTraits(.isStaticText)
             .background(GeometryReader { geo in
                 Color.clear.anchorPreference(key: TabPreferenceKey.self, value: .bounds) { [index: $0] }
             })
+    }
+    
+    func addTraits(selected: Bool) -> AccessibilityTraits {
+        var traits = AccessibilityTraits.isButton
+        if selected {
+            traits = traits.union(.isSelected)
+        }
+        return traits
     }
 }
 
