@@ -13,7 +13,7 @@ struct FontsAdditionsTest {
     }
     
     @Test
-    func subscript_with_validValue_returnsFontWithThisSize() {
+    func subscript_withValidValue_returnsFontWithThisSize() {
         // Given
         let expectedFont = Font.custom("Roboto-Medium", size: 12)
         // Then
@@ -21,7 +21,7 @@ struct FontsAdditionsTest {
     }
     
     @Test
-    func subscript_with_invalidValue_returnsFontWithDefaultSize() {
+    func subscript_withInvalidValue_returnsFontWithDefaultSize() {
         // Given
         let expectedFont = Font.custom("Roboto-Medium", size: 5)
         // Then

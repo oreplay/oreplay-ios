@@ -25,4 +25,6 @@ extension Font {
     
     static var body2: Font { Fonts.medium.14 }
     static var body3: Font { Fonts.medium.12 }
+    
+    static var toolbar: Font { Fonts.medium.16 }
 }
