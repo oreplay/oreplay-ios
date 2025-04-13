@@ -10,7 +10,7 @@ final class ToolBarViewModel: ObservableObject {
         init(title: String, a11yLabel: String? = nil, a11yIdentifier: String? = nil) {
             self.title = title
             self.a11yLabel = a11yLabel ?? title
-            self.a11yIdentifier = a11yIdentifier ?? "Toolbar option \(title)"
+            self.a11yIdentifier = a11yIdentifier ?? "Toolbar_option_\(title)"
         }
     }
     

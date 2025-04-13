@@ -67,6 +67,7 @@ private extension ToolBar {
     @ViewBuilder func option(index: Int) -> some View {
         let option = viewModel.options[index]
         let selected = viewModel.selectedIndex == index
+        
         Text(option.title)
             .font(.toolbar)
             .foregroundColor(selected ? .textPrimary : .text40)
