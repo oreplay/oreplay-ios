@@ -3,6 +3,11 @@ import Combine
 
 final class EventCardViewModel: ObservableObject {
     
+    enum Style {
+        case large(ColorResource)
+        case small
+    }
+    
     struct Configuration {
         var dateText: String = ""
         var eventNameText: String = ""
