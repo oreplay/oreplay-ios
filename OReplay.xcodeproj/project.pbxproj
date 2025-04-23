@@ -30,7 +30,7 @@
 		C27049E92DAA7E5700DED2C2 /* String+localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27049E82DAA7E5700DED2C2 /* String+localization.swift */; };
 		C27049EC2DAA7FC800DED2C2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27049EB2DAA7FC800DED2C2 /* Colors.xcassets */; };
 		C27049EF2DAA802300DED2C2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C27049EE2DAA802300DED2C2 /* Localizable.xcstrings */; };
-		C27049F32DAAE41F00DED2C2 /* HeaderViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27049F22DAAE41F00DED2C2 /* HeaderViewModelTest.swift */; };
+		C27049F32DAAE41F00DED2C2 /* HeaderViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27049F22DAAE41F00DED2C2 /* HeaderViewModelTests.swift */; };
 		C280C3552DA8631600170B5A /* EventCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C280C3542DA8631600170B5A /* EventCardViewModel.swift */; };
 		C280C35B2DA867D300170B5A /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C280C3572DA867D300170B5A /* Roboto-Bold.ttf */; };
 		C280C35C2DA867D300170B5A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C280C35A2DA867D300170B5A /* Roboto-Regular.ttf */; };
@@ -136,7 +136,7 @@
 		C27049E82DAA7E5700DED2C2 /* String+localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localization.swift"; sourceTree = "<group>"; };
 		C27049EB2DAA7FC800DED2C2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C27049EE2DAA802300DED2C2 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		C27049F22DAAE41F00DED2C2 /* HeaderViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewModelTest.swift; sourceTree = "<group>"; };
+		C27049F22DAAE41F00DED2C2 /* HeaderViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewModelTests.swift; sourceTree = "<group>"; };
 		C280C3542DA8631600170B5A /* EventCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardViewModel.swift; sourceTree = "<group>"; };
 		C280C3572DA867D300170B5A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		C280C3582DA867D300170B5A /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
@@ -383,7 +383,7 @@
 		C27049F12DAAE3FE00DED2C2 /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				C27049F22DAAE41F00DED2C2 /* HeaderViewModelTest.swift */,
+				C27049F22DAAE41F00DED2C2 /* HeaderViewModelTests.swift */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -724,7 +724,7 @@
 				C2C5C8242DA993F500328E79 /* Header.swift in Sources */,
 				C2A077612DA5839E00E1650D /* Event+Dummy.swift in Sources */,
 				C2A0775F2DA5829B00E1650D /* EventList+Dummy.swift in Sources */,
-				C27049F32DAAE41F00DED2C2 /* HeaderViewModelTest.swift in Sources */,
+				C27049F32DAAE41F00DED2C2 /* HeaderViewModelTests.swift in Sources */,
 				C2EFEFAB2DAC37AB00CB80DC /* ToolBarViewModelTests.swift in Sources */,
 				C21BD0FE2CF7A7A10012C652 /* APIConstantsTests.swift in Sources */,
 				C254473F2DA4267500218270 /* EventsRepositoryTests.swift in Sources */,
