@@ -36,7 +36,7 @@
       }
     },
     "today_events_empty" : {
-      "comment" : "today carousel empty",
+      "comment" : "Now section empty",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -48,6 +48,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hoy no hay ningún evento"
+          }
+        }
+      }
+    },
+    "today_events_title" : {
+      "comment" : "Now section title",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Live events"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eventos en curso"
           }
         }
       }
