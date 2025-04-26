@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct HorizontalCarousel: View {
-    @ObservedObject var viewModel: HorizontalCarouselViewModel
+struct HCarousel: View {
+    @ObservedObject var viewModel: HCarouselViewModel
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -30,7 +30,7 @@ struct HorizontalCarousel: View {
     let a11y2 = EventCardViewModel.Accesibility(identifier: "EventCard2", value: "\(title2) by \(club2)")
     let viewModel2 = EventCardViewModel(configuration: conf2, accesibility: a11y2)
     
-    HorizontalCarousel(viewModel: HorizontalCarouselViewModel(events: [viewModel1, viewModel2, viewModel1, viewModel2]) { event in
+    HCarousel(viewModel: HCarouselViewModel(events: [viewModel1, viewModel2, viewModel1, viewModel2]) { event in
         print("tapped event \(event.configuration.eventNameText)")
     })
 }

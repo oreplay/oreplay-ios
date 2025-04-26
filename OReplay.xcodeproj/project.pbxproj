@@ -43,14 +43,18 @@
 		C28A36AA2CEA631E00D11E93 /* EventsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36A92CEA631E00D11E93 /* EventsRepository.swift */; };
 		C28A36AD2CEA655800D11E93 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36AC2CEA655800D11E93 /* Event.swift */; };
 		C28A36AF2CEA67A100D11E93 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A36AE2CEA67A100D11E93 /* EventList.swift */; };
-		C290AF6A2DBCC7DC0009F15F /* HorizontalCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF692DBCC7DC0009F15F /* HorizontalCarousel.swift */; };
-		C290AF6B2DBCC7DC0009F15F /* HorizontalCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF692DBCC7DC0009F15F /* HorizontalCarousel.swift */; };
-		C290AF6D2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF6C2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift */; };
-		C290AF6E2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF6C2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift */; };
+		C290AF6A2DBCC7DC0009F15F /* HCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF692DBCC7DC0009F15F /* HCarousel.swift */; };
+		C290AF6B2DBCC7DC0009F15F /* HCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF692DBCC7DC0009F15F /* HCarousel.swift */; };
+		C290AF6D2DBCC7EF0009F15F /* HCarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF6C2DBCC7EF0009F15F /* HCarouselViewModel.swift */; };
+		C290AF6E2DBCC7EF0009F15F /* HCarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF6C2DBCC7EF0009F15F /* HCarouselViewModel.swift */; };
 		C290AF732DBD45A90009F15F /* NowContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF722DBD45A90009F15F /* NowContent.swift */; };
 		C290AF742DBD45A90009F15F /* NowContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF722DBD45A90009F15F /* NowContent.swift */; };
 		C290AF762DBD45C00009F15F /* NowContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF752DBD45C00009F15F /* NowContentViewModel.swift */; };
 		C290AF772DBD45C00009F15F /* NowContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF752DBD45C00009F15F /* NowContentViewModel.swift */; };
+		C290AF792DBD5B930009F15F /* VCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF782DBD5B930009F15F /* VCarousel.swift */; };
+		C290AF7A2DBD5B930009F15F /* VCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF782DBD5B930009F15F /* VCarousel.swift */; };
+		C290AF7C2DBD5BA30009F15F /* VCarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF7B2DBD5BA30009F15F /* VCarouselViewModel.swift */; };
+		C290AF7D2DBD5BA30009F15F /* VCarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF7B2DBD5BA30009F15F /* VCarouselViewModel.swift */; };
 		C2A077572DA57DEF00E1650D /* PeriodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A077562DA57DEF00E1650D /* PeriodTests.swift */; };
 		C2A0775A2DA580E900E1650D /* EventsUseCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A077592DA580E900E1650D /* EventsUseCasesTests.swift */; };
 		C2A0775D2DA5817B00E1650D /* EventRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0775C2DA5817B00E1650D /* EventRepositoryMock.swift */; };
@@ -156,10 +160,12 @@
 		C28A36A92CEA631E00D11E93 /* EventsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRepository.swift; sourceTree = "<group>"; };
 		C28A36AC2CEA655800D11E93 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C28A36AE2CEA67A100D11E93 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
-		C290AF692DBCC7DC0009F15F /* HorizontalCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCarousel.swift; sourceTree = "<group>"; };
-		C290AF6C2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCarouselViewModel.swift; sourceTree = "<group>"; };
+		C290AF692DBCC7DC0009F15F /* HCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCarousel.swift; sourceTree = "<group>"; };
+		C290AF6C2DBCC7EF0009F15F /* HCarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCarouselViewModel.swift; sourceTree = "<group>"; };
 		C290AF722DBD45A90009F15F /* NowContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowContent.swift; sourceTree = "<group>"; };
 		C290AF752DBD45C00009F15F /* NowContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowContentViewModel.swift; sourceTree = "<group>"; };
+		C290AF782DBD5B930009F15F /* VCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCarousel.swift; sourceTree = "<group>"; };
+		C290AF7B2DBD5BA30009F15F /* VCarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCarouselViewModel.swift; sourceTree = "<group>"; };
 		C2A077562DA57DEF00E1650D /* PeriodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodTests.swift; sourceTree = "<group>"; };
 		C2A077592DA580E900E1650D /* EventsUseCasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsUseCasesTests.swift; sourceTree = "<group>"; };
 		C2A0775C2DA5817B00E1650D /* EventRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepositoryMock.swift; sourceTree = "<group>"; };
@@ -469,8 +475,8 @@
 		C290AF682DBCC77D0009F15F /* HorizontalCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				C290AF692DBCC7DC0009F15F /* HorizontalCarousel.swift */,
-				C290AF6C2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift */,
+				C290AF692DBCC7DC0009F15F /* HCarousel.swift */,
+				C290AF6C2DBCC7EF0009F15F /* HCarouselViewModel.swift */,
 			);
 			path = HorizontalCarousel;
 			sourceTree = "<group>";
@@ -539,10 +545,12 @@
 		C2B5E39B2DA83E8B00191643 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				C290AF682DBCC77D0009F15F /* HorizontalCarousel */,
 				C2B5E39C2DA83EAB00191643 /* EventCard */,
 				C2C5C8212DA993D200328E79 /* Header */,
+				C290AF682DBCC77D0009F15F /* HorizontalCarousel */,
 				C2E14F132DAAEF5A00495881 /* ToolBar */,
+				C290AF782DBD5B930009F15F /* VCarousel.swift */,
+				C290AF7B2DBD5BA30009F15F /* VCarouselViewModel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -749,7 +757,8 @@
 		406230B7C7CB2E76147C0A48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				C290AF6A2DBCC7DC0009F15F /* HorizontalCarousel.swift in Sources */,
+				C290AF6A2DBCC7DC0009F15F /* HCarousel.swift in Sources */,
+				C290AF7D2DBD5BA30009F15F /* VCarouselViewModel.swift in Sources */,
 				C2E14F112DAAE91900495881 /* Font+Additions.swift in Sources */,
 				C2A077632DA584A600E1650D /* Organizer+dummy.swift in Sources */,
 				C2A0775A2DA580E900E1650D /* EventsUseCasesTests.swift in Sources */,
@@ -775,14 +784,15 @@
 				C25447432DA4286D00218270 /* RequestFactoryMock.swift in Sources */,
 				C2A077572DA57DEF00E1650D /* PeriodTests.swift in Sources */,
 				C252722F2D0B5BC50010F295 /* HTTPRequestTests.swift in Sources */,
-				C290AF6D2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift in Sources */,
+				C290AF6D2DBCC7EF0009F15F /* HCarouselViewModel.swift in Sources */,
+				C290AF792DBD5B930009F15F /* VCarousel.swift in Sources */,
 				C2E14F162DAAEF7D00495881 /* ToolBar.swift in Sources */,
 			);
 		};
 		F429ABD84A78B5DAED739EE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				C290AF6B2DBCC7DC0009F15F /* HorizontalCarousel.swift in Sources */,
+				C290AF6B2DBCC7DC0009F15F /* HCarousel.swift in Sources */,
 				C280C3612DA8694500170B5A /* Font+Additions.swift in Sources */,
 				C2380F162CE8B7E6006E56E2 /* NetworkMonitor.swift in Sources */,
 				9CCBC12E3BDE2BCBED2053E0 /* ContentView.swift in Sources */,
@@ -793,13 +803,14 @@
 				C2380F0E2CE8B5A0006E56E2 /* HTTPRequestContract.swift in Sources */,
 				C28A36AA2CEA631E00D11E93 /* EventsRepository.swift in Sources */,
 				C2AB56192DA2D55C00167487 /* Organizer.swift in Sources */,
+				C290AF7C2DBD5BA30009F15F /* VCarouselViewModel.swift in Sources */,
 				C2C5C8232DA993F500328E79 /* Header.swift in Sources */,
 				C2380F0F2CE8B5A0006E56E2 /* APIConstants.swift in Sources */,
 				C290AF732DBD45A90009F15F /* NowContent.swift in Sources */,
 				C2380F182CE8C42A006E56E2 /* HTTPResponseContract.swift in Sources */,
 				C28A36AD2CEA655800D11E93 /* Event.swift in Sources */,
 				C28A36AF2CEA67A100D11E93 /* EventList.swift in Sources */,
-				C290AF6E2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift in Sources */,
+				C290AF6E2DBCC7EF0009F15F /* HCarouselViewModel.swift in Sources */,
 				C2B5E3A02DA83EF700191643 /* EventCard.swift in Sources */,
 				C2380F102CE8B5A0006E56E2 /* HTTPResponse.swift in Sources */,
 				C2EEADD02CF3289A00B3C1AF /* PresentationModule.swift in Sources */,
@@ -818,6 +829,7 @@
 				C280C3552DA8631600170B5A /* EventCardViewModel.swift in Sources */,
 				C2380F132CE8B5A0006E56E2 /* RequestFactoryContract.swift in Sources */,
 				EC1754D0A331A25AA52AC9EC /* ProjectApp.swift in Sources */,
+				C290AF7A2DBD5B930009F15F /* VCarousel.swift in Sources */,
 				C2EEADD22CF3311200B3C1AF /* EventListViewModel.swift in Sources */,
 				C27049E92DAA7E5700DED2C2 /* String+localization.swift in Sources */,
 			);

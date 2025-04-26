@@ -1,6 +1,6 @@
 import Combine
 
-final class HorizontalCarouselViewModel: ObservableObject {
+final class VCarouselViewModel: ObservableObject {
     @Published var events: [EventCardViewModel]
     var eventTapped: ((EventCardViewModel) -> Void)?
     
