@@ -1,15 +1,11 @@
 import Combine
 
-final class NowContentViewModel: ObservableObject {
+final class HCarouselViewModel: ObservableObject {
     @Published var events: [EventCardViewModel]
     var eventTapped: ((EventCardViewModel) -> Void)?
     
     init(events: [EventCardViewModel] = [], eventTapped: ((EventCardViewModel) -> Void)? = nil) {
         self.events = events
         self.eventTapped = eventTapped
-    }
-    
-    func carouselViewModel() -> HCarouselViewModel {
-        HCarouselViewModel(events: events, eventTapped: eventTapped)
     }
 }

@@ -22,7 +22,7 @@ private extension NowContent {
         VStack {
             title
                 .padding(.horizontal, 16)
-            HorizontalCarousel(viewModel: viewModel.carouselViewModel())
+            HCarousel(viewModel: viewModel.carouselViewModel())
         }
     }
     

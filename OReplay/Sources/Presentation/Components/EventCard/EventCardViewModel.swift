@@ -21,7 +21,7 @@ final class EventCardViewModel: ObservableObject, Identifiable {
             case .large:
                 return 150
             case .small:
-                return 120
+                return 115
             }
         }
     }
