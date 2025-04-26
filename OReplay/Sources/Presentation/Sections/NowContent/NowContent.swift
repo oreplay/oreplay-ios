@@ -14,11 +14,15 @@ private extension NowContent {
         if viewModel.events.isEmpty {
             noItems
         } else {
-            VStack {
-                title
-                    .padding(.horizontal, 16)
-                HorizontalCarousel(viewModel: viewModel.carouselViewModel())
-            }
+            carousel
+        }
+    }
+    
+    @ViewBuilder var carousel: some View {
+        VStack {
+            title
+                .padding(.horizontal, 16)
+            HorizontalCarousel(viewModel: viewModel.carouselViewModel())
         }
     }
     
