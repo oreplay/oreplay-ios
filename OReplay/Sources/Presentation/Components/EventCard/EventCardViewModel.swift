@@ -1,7 +1,7 @@
 import SwiftUI
 import Combine
 
-final class EventCardViewModel: ObservableObject {
+final class EventCardViewModel: ObservableObject, Identifiable {
     
     enum Style {
         case large(Color)
@@ -40,6 +40,7 @@ final class EventCardViewModel: ObservableObject {
     
     @Published var configuration: Configuration
     @Published var accessibility: Accesibility
+    let id = UUID()
     
     init(configuration: Configuration, accesibility: Accesibility) {
         self.configuration = configuration

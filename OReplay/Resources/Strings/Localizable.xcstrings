@@ -34,6 +34,23 @@
           }
         }
       }
+    },
+    "today_events_empty" : {
+      "comment" : "today carousel empty",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There aren’t events today"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoy no hay ningún evento"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
