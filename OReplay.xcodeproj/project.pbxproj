@@ -47,6 +47,10 @@
 		C290AF6B2DBCC7DC0009F15F /* HorizontalCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF692DBCC7DC0009F15F /* HorizontalCarousel.swift */; };
 		C290AF6D2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF6C2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift */; };
 		C290AF6E2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF6C2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift */; };
+		C290AF732DBD45A90009F15F /* NowContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF722DBD45A90009F15F /* NowContent.swift */; };
+		C290AF742DBD45A90009F15F /* NowContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF722DBD45A90009F15F /* NowContent.swift */; };
+		C290AF762DBD45C00009F15F /* NowContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF752DBD45C00009F15F /* NowContentViewModel.swift */; };
+		C290AF772DBD45C00009F15F /* NowContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290AF752DBD45C00009F15F /* NowContentViewModel.swift */; };
 		C2A077572DA57DEF00E1650D /* PeriodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A077562DA57DEF00E1650D /* PeriodTests.swift */; };
 		C2A0775A2DA580E900E1650D /* EventsUseCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A077592DA580E900E1650D /* EventsUseCasesTests.swift */; };
 		C2A0775D2DA5817B00E1650D /* EventRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0775C2DA5817B00E1650D /* EventRepositoryMock.swift */; };
@@ -154,6 +158,8 @@
 		C28A36AE2CEA67A100D11E93 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		C290AF692DBCC7DC0009F15F /* HorizontalCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCarousel.swift; sourceTree = "<group>"; };
 		C290AF6C2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCarouselViewModel.swift; sourceTree = "<group>"; };
+		C290AF722DBD45A90009F15F /* NowContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowContent.swift; sourceTree = "<group>"; };
+		C290AF752DBD45C00009F15F /* NowContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowContentViewModel.swift; sourceTree = "<group>"; };
 		C2A077562DA57DEF00E1650D /* PeriodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodTests.swift; sourceTree = "<group>"; };
 		C2A077592DA580E900E1650D /* EventsUseCasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsUseCasesTests.swift; sourceTree = "<group>"; };
 		C2A0775C2DA5817B00E1650D /* EventRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepositoryMock.swift; sourceTree = "<group>"; };
@@ -296,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				C2D7CE3F2CF26AD0005017E2 /* Screens */,
+				C290AF702DBD457A0009F15F /* Sections */,
 				C2B5E39B2DA83E8B00191643 /* Components */,
 				C2D7CE402CF26AE8005017E2 /* UseCases */,
 				C280C35F2DA868C600170B5A /* Utils */,
@@ -466,6 +473,23 @@
 				C290AF6C2DBCC7EF0009F15F /* HorizontalCarouselViewModel.swift */,
 			);
 			path = HorizontalCarousel;
+			sourceTree = "<group>";
+		};
+		C290AF702DBD457A0009F15F /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				C290AF712DBD45860009F15F /* NowContent */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		C290AF712DBD45860009F15F /* NowContent */ = {
+			isa = PBXGroup;
+			children = (
+				C290AF722DBD45A90009F15F /* NowContent.swift */,
+				C290AF752DBD45C00009F15F /* NowContentViewModel.swift */,
+			);
+			path = NowContent;
 			sourceTree = "<group>";
 		};
 		C2A077542DA57D6B00E1650D /* Domain */ = {
@@ -736,6 +760,7 @@
 				C2A0775D2DA5817B00E1650D /* EventRepositoryMock.swift in Sources */,
 				C254474B2DA4360500218270 /* EventListMock.swift in Sources */,
 				C25447462DA42B8C00218270 /* HTTPRequestMock.swift in Sources */,
+				C290AF772DBD45C00009F15F /* NowContentViewModel.swift in Sources */,
 				C2E14F122DAAE96600495881 /* String+localization.swift in Sources */,
 				C2E14F192DAAEF8C00495881 /* ToolBarViewModel.swift in Sources */,
 				C2C5C8242DA993F500328E79 /* Header.swift in Sources */,
@@ -746,6 +771,7 @@
 				C21BD0FE2CF7A7A10012C652 /* APIConstantsTests.swift in Sources */,
 				C254473F2DA4267500218270 /* EventsRepositoryTests.swift in Sources */,
 				C2C5C8182DA98DE300328E79 /* Fonts+AdditionsTests.swift in Sources */,
+				C290AF742DBD45A90009F15F /* NowContent.swift in Sources */,
 				C25447432DA4286D00218270 /* RequestFactoryMock.swift in Sources */,
 				C2A077572DA57DEF00E1650D /* PeriodTests.swift in Sources */,
 				C252722F2D0B5BC50010F295 /* HTTPRequestTests.swift in Sources */,
@@ -769,6 +795,7 @@
 				C2AB56192DA2D55C00167487 /* Organizer.swift in Sources */,
 				C2C5C8232DA993F500328E79 /* Header.swift in Sources */,
 				C2380F0F2CE8B5A0006E56E2 /* APIConstants.swift in Sources */,
+				C290AF732DBD45A90009F15F /* NowContent.swift in Sources */,
 				C2380F182CE8C42A006E56E2 /* HTTPResponseContract.swift in Sources */,
 				C28A36AD2CEA655800D11E93 /* Event.swift in Sources */,
 				C28A36AF2CEA67A100D11E93 /* EventList.swift in Sources */,
@@ -782,6 +809,7 @@
 				C2E14F152DAAEF7D00495881 /* ToolBar.swift in Sources */,
 				C26C46712CF7A02D00566F20 /* NetworkMonitorContract.swift in Sources */,
 				C2EEADCC2CF3208D00B3C1AF /* EventsUseCase.swift in Sources */,
+				C290AF762DBD45C00009F15F /* NowContentViewModel.swift in Sources */,
 				C2EEADCA2CF3187600B3C1AF /* EventsUseCaseContract.swift in Sources */,
 				C28A36A22CEA56D200D11E93 /* DataModule.swift in Sources */,
 				C2380F112CE8B5A0006E56E2 /* RequestFactory.swift in Sources */,

@@ -4,27 +4,6 @@ struct HorizontalCarousel: View {
     @ObservedObject var viewModel: HorizontalCarouselViewModel
     
     var body: some View {
-        content
-            .frame(width: .infinity, height: 140)
-    }
-}
-
-private extension HorizontalCarousel {
-    @ViewBuilder var content: some View {
-        if viewModel.events.isEmpty {
-            noItems
-        } else {
-            carousel
-        }
-    }
-    
-    @ViewBuilder var noItems: some View {
-        Text("today_events_empty")
-            .font(.h1)
-            .foregroundColor(.text40)
-    }
-    
-    @ViewBuilder var carousel: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 16) {
                 ForEach(viewModel.events) { event in
@@ -51,15 +30,7 @@ private extension HorizontalCarousel {
     let a11y2 = EventCardViewModel.Accesibility(identifier: "EventCard2", value: "\(title2) by \(club2)")
     let viewModel2 = EventCardViewModel(configuration: conf2, accesibility: a11y2)
     
-    VStack {
-        Spacer()
-        HorizontalCarousel(viewModel: HorizontalCarouselViewModel(events: []))
-        Spacer()
-        HorizontalCarousel(viewModel: HorizontalCarouselViewModel(events: [viewModel1, viewModel2, viewModel1, viewModel2]) { event in
-            print("tapped event \(event.configuration.eventNameText)")
-        })
-        Spacer()
-    }
-        
-    
+    HorizontalCarousel(viewModel: HorizontalCarouselViewModel(events: [viewModel1, viewModel2, viewModel1, viewModel2]) { event in
+        print("tapped event \(event.configuration.eventNameText)")
+    })
 }
