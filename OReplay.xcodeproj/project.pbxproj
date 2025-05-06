@@ -10,6 +10,12 @@
 		3DF2000D18F5F515B3D8FB2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C96719885D4AD93ABE20966 /* Images.xcassets */; };
 		9CCBC12E3BDE2BCBED2053E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ADE2086B10118F664DA0A /* ContentView.swift */; };
 		C21BD0FE2CF7A7A10012C652 /* APIConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BD0FD2CF7A7A10012C652 /* APIConstantsTests.swift */; };
+		C22CF8F12DC3E0F000578E4C /* PushToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CF8F02DC3E0F000578E4C /* PushToRefresh.swift */; };
+		C22CF8F22DC3E0F000578E4C /* PushToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CF8F02DC3E0F000578E4C /* PushToRefresh.swift */; };
+		C22CF8F42DC3E11200578E4C /* PushToRefreshViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CF8F32DC3E11200578E4C /* PushToRefreshViewModel.swift */; };
+		C22CF8F52DC3E11200578E4C /* PushToRefreshViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CF8F32DC3E11200578E4C /* PushToRefreshViewModel.swift */; };
+		C22CF8F72DC3E2BE00578E4C /* RunnerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CF8F62DC3E2BE00578E4C /* RunnerAnimation.swift */; };
+		C22CF8F82DC3E2BE00578E4C /* RunnerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CF8F62DC3E2BE00578E4C /* RunnerAnimation.swift */; };
 		C2380F0C2CE8B5A0006E56E2 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2380F042CE8B5A0006E56E2 /* HTTPError.swift */; };
 		C2380F0D2CE8B5A0006E56E2 /* URLSessionContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2380F092CE8B5A0006E56E2 /* URLSessionContract.swift */; };
 		C2380F0E2CE8B5A0006E56E2 /* HTTPRequestContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2380F072CE8B5A0006E56E2 /* HTTPRequestContract.swift */; };
@@ -128,6 +134,9 @@
 		932ADE2086B10118F664DA0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A3186A2656C36E98F11A9606 /* OReplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OReplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21BD0FD2CF7A7A10012C652 /* APIConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstantsTests.swift; sourceTree = "<group>"; };
+		C22CF8F02DC3E0F000578E4C /* PushToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushToRefresh.swift; sourceTree = "<group>"; };
+		C22CF8F32DC3E11200578E4C /* PushToRefreshViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushToRefreshViewModel.swift; sourceTree = "<group>"; };
+		C22CF8F62DC3E2BE00578E4C /* RunnerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerAnimation.swift; sourceTree = "<group>"; };
 		C2380F032CE8B5A0006E56E2 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		C2380F042CE8B5A0006E56E2 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		C2380F052CE8B5A0006E56E2 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
@@ -280,6 +289,25 @@
 				82A1B348106A2C984165905F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C22CF8EE2DC3E0A700578E4C /* VCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				C290AF782DBD5B930009F15F /* VCarousel.swift */,
+				C290AF7B2DBD5BA30009F15F /* VCarouselViewModel.swift */,
+			);
+			path = VCarousel;
+			sourceTree = "<group>";
+		};
+		C22CF8EF2DC3E0BC00578E4C /* PushToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				C22CF8F02DC3E0F000578E4C /* PushToRefresh.swift */,
+				C22CF8F32DC3E11200578E4C /* PushToRefreshViewModel.swift */,
+				C22CF8F62DC3E2BE00578E4C /* RunnerAnimation.swift */,
+			);
+			path = PushToRefresh;
 			sourceTree = "<group>";
 		};
 		C2380EFF2CE8B34B006E56E2 /* Data */ = {
@@ -472,13 +500,13 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		C290AF682DBCC77D0009F15F /* HorizontalCarousel */ = {
+		C290AF682DBCC77D0009F15F /* HCarousel */ = {
 			isa = PBXGroup;
 			children = (
 				C290AF692DBCC7DC0009F15F /* HCarousel.swift */,
 				C290AF6C2DBCC7EF0009F15F /* HCarouselViewModel.swift */,
 			);
-			path = HorizontalCarousel;
+			path = HCarousel;
 			sourceTree = "<group>";
 		};
 		C290AF702DBD457A0009F15F /* Sections */ = {
@@ -545,12 +573,12 @@
 		C2B5E39B2DA83E8B00191643 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C22CF8EF2DC3E0BC00578E4C /* PushToRefresh */,
 				C2B5E39C2DA83EAB00191643 /* EventCard */,
 				C2C5C8212DA993D200328E79 /* Header */,
-				C290AF682DBCC77D0009F15F /* HorizontalCarousel */,
+				C290AF682DBCC77D0009F15F /* HCarousel */,
 				C2E14F132DAAEF5A00495881 /* ToolBar */,
-				C290AF782DBD5B930009F15F /* VCarousel.swift */,
-				C290AF7B2DBD5BA30009F15F /* VCarouselViewModel.swift */,
+				C22CF8EE2DC3E0A700578E4C /* VCarousel */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -759,6 +787,7 @@
 			files = (
 				C290AF6A2DBCC7DC0009F15F /* HCarousel.swift in Sources */,
 				C290AF7D2DBD5BA30009F15F /* VCarouselViewModel.swift in Sources */,
+				C22CF8F72DC3E2BE00578E4C /* RunnerAnimation.swift in Sources */,
 				C2E14F112DAAE91900495881 /* Font+Additions.swift in Sources */,
 				C2A077632DA584A600E1650D /* Organizer+dummy.swift in Sources */,
 				C2A0775A2DA580E900E1650D /* EventsUseCasesTests.swift in Sources */,
@@ -775,8 +804,10 @@
 				C2C5C8242DA993F500328E79 /* Header.swift in Sources */,
 				C2A077612DA5839E00E1650D /* Event+Dummy.swift in Sources */,
 				C2A0775F2DA5829B00E1650D /* EventList+Dummy.swift in Sources */,
+				C22CF8F12DC3E0F000578E4C /* PushToRefresh.swift in Sources */,
 				C27049F32DAAE41F00DED2C2 /* HeaderViewModelTests.swift in Sources */,
 				C2EFEFAB2DAC37AB00CB80DC /* ToolBarViewModelTests.swift in Sources */,
+				C22CF8F52DC3E11200578E4C /* PushToRefreshViewModel.swift in Sources */,
 				C21BD0FE2CF7A7A10012C652 /* APIConstantsTests.swift in Sources */,
 				C254473F2DA4267500218270 /* EventsRepositoryTests.swift in Sources */,
 				C2C5C8182DA98DE300328E79 /* Fonts+AdditionsTests.swift in Sources */,
@@ -793,6 +824,7 @@
 			isa = PBXSourcesBuildPhase;
 			files = (
 				C290AF6B2DBCC7DC0009F15F /* HCarousel.swift in Sources */,
+				C22CF8F82DC3E2BE00578E4C /* RunnerAnimation.swift in Sources */,
 				C280C3612DA8694500170B5A /* Font+Additions.swift in Sources */,
 				C2380F162CE8B7E6006E56E2 /* NetworkMonitor.swift in Sources */,
 				9CCBC12E3BDE2BCBED2053E0 /* ContentView.swift in Sources */,
@@ -821,12 +853,14 @@
 				C26C46712CF7A02D00566F20 /* NetworkMonitorContract.swift in Sources */,
 				C2EEADCC2CF3208D00B3C1AF /* EventsUseCase.swift in Sources */,
 				C290AF762DBD45C00009F15F /* NowContentViewModel.swift in Sources */,
+				C22CF8F42DC3E11200578E4C /* PushToRefreshViewModel.swift in Sources */,
 				C2EEADCA2CF3187600B3C1AF /* EventsUseCaseContract.swift in Sources */,
 				C28A36A22CEA56D200D11E93 /* DataModule.swift in Sources */,
 				C2380F112CE8B5A0006E56E2 /* RequestFactory.swift in Sources */,
 				C2380F122CE8B5A0006E56E2 /* HTTPRequest.swift in Sources */,
 				C2E14F182DAAEF8C00495881 /* ToolBarViewModel.swift in Sources */,
 				C280C3552DA8631600170B5A /* EventCardViewModel.swift in Sources */,
+				C22CF8F22DC3E0F000578E4C /* PushToRefresh.swift in Sources */,
 				C2380F132CE8B5A0006E56E2 /* RequestFactoryContract.swift in Sources */,
 				EC1754D0A331A25AA52AC9EC /* ProjectApp.swift in Sources */,
 				C290AF7A2DBD5B930009F15F /* VCarousel.swift in Sources */,
