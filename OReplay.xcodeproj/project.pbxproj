@@ -291,15 +291,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C22CF8EE2DC3E0A700578E4C /* VCarousel */ = {
-			isa = PBXGroup;
-			children = (
-				C290AF782DBD5B930009F15F /* VCarousel.swift */,
-				C290AF7B2DBD5BA30009F15F /* VCarouselViewModel.swift */,
-			);
-			path = VCarousel;
-			sourceTree = "<group>";
-		};
 		C22CF8EF2DC3E0BC00578E4C /* PushToRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,6 +457,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C283089C2DCBCCB0008C2D8B /* VCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				C290AF782DBD5B930009F15F /* VCarousel.swift */,
+				C290AF7B2DBD5BA30009F15F /* VCarouselViewModel.swift */,
+			);
+			path = VCarousel;
+			sourceTree = "<group>";
+		};
 		C28A369F2CEA500100D11E93 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,7 +578,7 @@
 				C2C5C8212DA993D200328E79 /* Header */,
 				C290AF682DBCC77D0009F15F /* HCarousel */,
 				C2E14F132DAAEF5A00495881 /* ToolBar */,
-				C22CF8EE2DC3E0A700578E4C /* VCarousel */,
+				C283089C2DCBCCB0008C2D8B /* VCarousel */,
 			);
 			path = Components;
 			sourceTree = "<group>";
