@@ -35,6 +35,12 @@
         }
       }
     },
+    "Cancel" : {
+
+    },
+    "Next State" : {
+
+    },
     "today_events_empty" : {
       "comment" : "Now section empty",
       "localizations" : {
