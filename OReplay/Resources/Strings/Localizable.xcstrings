@@ -35,6 +35,12 @@
         }
       }
     },
+    "Cancel" : {
+      "shouldTranslate" : false
+    },
+    "Next State" : {
+      "shouldTranslate" : false
+    },
     "today_events_empty" : {
       "comment" : "Now section empty",
       "localizations" : {
