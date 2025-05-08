@@ -573,10 +573,10 @@
 		C2B5E39B2DA83E8B00191643 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				C22CF8EF2DC3E0BC00578E4C /* PushToRefresh */,
 				C2B5E39C2DA83EAB00191643 /* EventCard */,
 				C2C5C8212DA993D200328E79 /* Header */,
 				C290AF682DBCC77D0009F15F /* HCarousel */,
+				C22CF8EF2DC3E0BC00578E4C /* PushToRefresh */,
 				C2E14F132DAAEF5A00495881 /* ToolBar */,
 				C283089C2DCBCCB0008C2D8B /* VCarousel */,
 			);

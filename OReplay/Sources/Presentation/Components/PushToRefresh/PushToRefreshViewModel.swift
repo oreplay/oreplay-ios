@@ -9,11 +9,18 @@ final class PushToRefreshViewModel: ObservableObject {
         case finishing
     }
     
-    @Published var state: State = .hide
-    var runnerWidth: CGFloat
+    @Published var state: State = .hide {
+        didSet {
+            didChangeState(state)
+        }
+    }
     
-    init(runnerWidth: CGFloat = 40) {
+    private let didChangeState: (State) -> Void
+    let runnerWidth: CGFloat
+    
+    init(runnerWidth: CGFloat = 40, didChangeState: @escaping (State) -> Void) {
         self.runnerWidth = runnerWidth
+        self.didChangeState = didChangeState
     }
     
     func nextState() {
