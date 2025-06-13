@@ -13,8 +13,6 @@ struct ToolBar: View {
     @ObservedObject var viewModel: ToolBarViewModel
     @State private var tabFrames: [Int: Anchor<CGRect>] = [:]
     
-    var onSelect: ((Int) -> Void)? = nil
-    
     var body: some View {
         VStack(spacing: 4) {
             options
@@ -35,8 +33,7 @@ private extension ToolBar {
                 option(index: index)
                     .onTapGesture {
                         withAnimation(.easeInOut(duration: 0.33)) {
-                            viewModel.selectedIndex = index
-                            onSelect?(index)
+                            viewModel.updateSelectedIndex(index)
                         }
                     }
             }
@@ -94,7 +91,7 @@ private extension ToolBar {
 #Preview {
     let options = [ToolBarViewModel.Option(title: "FUTURE EVENTS"),
                    ToolBarViewModel.Option(title: "PAST EVENTS")]
-    ToolBar(viewModel: ToolBarViewModel(options: options)) {
+    ToolBar(viewModel: ToolBarViewModel(options: options) {
         print("selected \($0)")
-    }
+    })
 }

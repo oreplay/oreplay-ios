@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct OtherContent: View {
-    @StateObject private var viewModel = OtherContentViewModel()
+    @ObservedObject private var viewModel: OtherContentViewModel
 
     var body: some View {
         VStack(spacing: 0) {

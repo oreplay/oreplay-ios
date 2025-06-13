@@ -16,9 +16,17 @@ final class ToolBarViewModel: ObservableObject {
     
     @Published var options: [Option]
     @Published var selectedIndex: Int
+    
+    var onSelect: ((Int) -> Void)? = nil
 
-    init(options: [Option], defaultSelectedIndex: Int = 0) {
+    init(options: [Option], defaultSelectedIndex: Int = 0, onSelect: ((Int) -> Void)? = nil) {
         self.options = options
         self.selectedIndex = defaultSelectedIndex
+        self.onSelect = onSelect
+    }
+    
+    func updateSelectedIndex(_ selectedIndex: Int) {
+        self.selectedIndex = selectedIndex
+        self.onSelect?(selectedIndex)
     }
 }
